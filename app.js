@@ -16,7 +16,8 @@ let activeTab = localStorage.getItem('d4tab') || 'guide';
 
 // ---------- boot ----------
 async function boot() {
-  C = await (await fetch('./content.json')).json();
+  // no-cache: always revalidate so content edits appear on next refresh (ETag makes this cheap)
+  C = await (await fetch('./content.json', { cache: 'no-cache' })).json();
   $('#season-label').textContent = C.meta.season;
   store.onToast(showToast);
   store.onChange(onStateChange);
