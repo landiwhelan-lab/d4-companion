@@ -153,12 +153,24 @@ export async function ensureSeeded(content) {
   await seed(content);
 }
 
+// Deterministic per-party pseudo-UUID so seeding is idempotent for a party but
+// two parties can never collide on the same primary key (FNV-1a over party+key).
+function seedId(key) {
+  const hex = [0x811c9dc5, 0x01000193, 0xdeadbeef, 0xcafebabe].map((init, s) => {
+    let x = init >>> 0;
+    const str = `${party}:${key}:${s}`;
+    for (let i = 0; i < str.length; i++) { x ^= str.charCodeAt(i); x = Math.imul(x, 0x01000193) >>> 0; }
+    return (x >>> 0).toString(16).padStart(8, '0');
+  }).join('');
+  return `${hex.slice(0, 8)}-${hex.slice(8, 12)}-4${hex.slice(13, 16)}-8${hex.slice(17, 20)}-${hex.slice(20, 32)}`;
+}
+
 async function seed(content) {
   const now = new Date().toISOString();
   const tickRows = Object.entries(content.seed.ticks)
     .map(([key, value]) => ({ party, key, value, updated_at: now }));
-  const sessionRows = content.seed.sessions.map(r => ({ ...r, party }));
-  const targetRows = content.seed.targets.map(r => ({ ...r, party }));
+  const sessionRows = content.seed.sessions.map(r => ({ ...r, id: seedId('session:' + r.id), party }));
+  const targetRows = content.seed.targets.map(r => ({ ...r, id: seedId('target:' + r.id), party }));
   const r1 = await supabase.from('ticks').upsert(tickRows, { onConflict: 'party,key' });
   const r2 = await supabase.from('sessions').upsert(sessionRows, { onConflict: 'id' });
   const r3 = await supabase.from('targets').upsert(targetRows, { onConflict: 'id' });
