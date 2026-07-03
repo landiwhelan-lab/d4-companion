@@ -44,7 +44,7 @@
     {
       "id": "cube",
       "title": "Horadric cube · crafting Mythics",
-      "html": "<p><b>Mythic Uniques 3.0:</b> any Unique can become Mythic.</p><ul><li>Craft at <b>level 70 in Torment+</b> via Horadric Cube → <i>Upgrade to Mythic</i>.</li><li>Recipe: <b>850+ Unique of the same slot + 5 Pandemonium Fragments</b>.</li><li>Only one <i>crafted</i> Mythic equipped at a time (dropped/cache ones unlimited).</li><li><b>Seasonal Lair Boss (Corrupted Reaper, Zarbinzet)</b> has the best Mythic + Fragment drops.</li></ul><p class='hint'>This is how we get: Melted Heart of Selig, Ring of Starless Skies, The Grandfather (Landi) and Mythic Fists of Fate / Endurant Faith (Hubby). Keep every 850+ Unique in the right slot as craft fodder.</p>"
+      "html": "<p><b>Mythic Uniques 3.0:</b> any Unique can become Mythic.</p><ul><li>Craft at <b>level 70 in Torment+</b> via Horadric Cube → <i>Upgrade to Mythic</i>.</li><li>Recipe: <b>850+ Unique of the same slot + 5 Pandemonium Fragments</b>.</li><li>Only one <i>crafted</i> Mythic equipped at a time (dropped/cache ones unlimited).</li><li><b>Seasonal Lair Boss (Corrupted Reaper, Zarbinzet)</b> has the best Mythic + Fragment drops.</li></ul><p class='hint'>This is how we get: Melted Heart of Selig, Ring of Starless Skies, The Grandfather (Landi) and Mythic Fists of Fate / Endurant Faith (Nolan). Keep every 850+ Unique in the right slot as craft fodder.</p>"
     },
     {
       "id": "endgame-notes",
@@ -141,7 +141,7 @@
     },
     {
       "id": "p2",
-      "name": "Hubby",
+      "name": "Nolan",
       "klass": "Paladin",
       "build": "Wing Strikes (Arbiter)",
       "color": "#e0b84f",
