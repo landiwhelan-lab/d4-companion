@@ -229,6 +229,10 @@ function gearRow(chId, phase, g) {
     ${open ? `<div class="gear-detail">
       <ol class="ladder">${g.ladder.map((l, i) => `<li class="${i <= st - 1 ? 'past' : ''}">${esc(l)}</li>`).join('')}</ol>
       ${g.source ? `<p>📍 <b>${esc(g.source)}</b></p>` : ''}
+      ${g.aspect ? `<p>✨ <b>Aspect:</b> ${esc(g.aspect)}</p>` : ''}
+      ${g.affixes?.length ? `<p>🎯 <b>Affixes:</b> ${g.affixes.map(esc).join(' · ')}</p>` : ''}
+      ${g.tempers?.length ? `<p>🔨 <b>Tempers:</b> ${g.tempers.map(esc).join(' · ')}</p>` : ''}
+      ${g.masterwork ? `<p>⭐ <b>Masterwork:</b> ${esc(g.masterwork)}</p>` : ''}
       ${g.note ? `<p>${esc(g.note)}</p>` : ''}
     </div>` : ''}
   </li>`;

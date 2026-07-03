@@ -49,7 +49,7 @@
     {
       "id": "endgame-notes",
       "title": "Endgame switch plan",
-      "html": "<ul><li>At <b>60–70</b>: swap each character to its endgame build (links in Resources).</li><li>Start on the <b>Starter/Legendary variants</b> — all aspects, no uniques required.</li><li>Clear <b>Pit 10 at 60+</b> to unlock Torment 1 and start the ancestral/unique chase.</li><li>Work each gear slot up its ladder (see the gear trackers) → chase uniques from bosses → craft Mythics via the cube.</li></ul>"
+      "html": "<ul><li><b>Leveling builds run all the way to 70</b> — no build switch at 35.</li><li>At <b>70</b>: swap each character to its endgame build (links in Resources), starting on the <b>Starter/Legendary variants</b> — all aspects, no uniques required.</li><li>Clear <b>Pit 10 at 60+</b> to unlock Torment 1 and start the ancestral/unique chase.</li><li>Work each gear slot up its ladder (see the gear trackers) → chase uniques from bosses → craft Mythics via the cube.</li></ul>"
     }
   ],
   "characters": [
@@ -66,7 +66,7 @@
       "phases": [
         {
           "id": "leveling",
-          "label": "Leveling 1–35",
+          "label": "Leveling 1–70",
           "skills": [
             { "id": "lunging", "text": "Lunging Strike", "note": "Fury generation early · assigned to Dual-wield" },
             { "id": "whirlwind", "text": "Whirlwind → Tornado Whirlwind at 15", "note": "Build takes off at 15 · assigned to 2H Mace" },
@@ -97,7 +97,7 @@
         },
         {
           "id": "endgame",
-          "label": "Endgame",
+          "label": "Endgame 70+",
           "intro": "Ladder: Legendary variant (fresh 70) → Uniques → Mythic → Selig (final). Selig runs Melted Heart with ZERO Maximum Life anywhere — use the Mythic variant until that's fully set up or you will die.",
           "skills": [
             { "id": "whirlwind", "text": "Whirlwind (Tornado)", "note": "2H Mace arsenal" },
@@ -152,7 +152,7 @@
       "phases": [
         {
           "id": "leveling",
-          "label": "Leveling 1–35",
+          "label": "Leveling 1–70",
           "skills": [
             { "id": "fallingstar", "text": "Falling Star", "note": "Ascend into Arbiter — use on cooldown" },
             { "id": "advance", "text": "Advance → Flash of the Blade", "note": "Mobility + Arbiter uptime · plain Advance before 15" },
@@ -182,7 +182,7 @@
         },
         {
           "id": "endgame",
-          "label": "Endgame",
+          "label": "Endgame 70+",
           "intro": "Ladder: Starter (all aspects, no uniques) → Endgame (Crown of Lucion + Sanctis) → Speed/Push (Mythic Fists of Fate + Ghostwalker). ⚠ Berú of Light's Epiphany is currently bugged (build works, just weaker) — check the build page for updates.",
           "skills": [
             { "id": "arbiter", "text": "Arbiter of Justice", "note": "Cast to trigger Berú's [x]500% + Fortress" },
@@ -253,7 +253,7 @@
     { "id": "expert", "text": "Move to Expert/Penitent (we're 50 now)" },
     { "id": "nodes14", "text": "Push Helltide nodes toward 14 for guaranteed Maggots" },
     { "id": "pit10", "text": "Clear Pit 10 at 60+ to unlock Torment 1" },
-    { "id": "endgame-swap", "text": "Swap to endgame builds ~60–70 (Starter/Legendary variants first)" },
+    { "id": "endgame-swap", "text": "Swap to endgame builds at 70 (Starter/Legendary variants first)" },
     { "id": "unique-chase", "text": "Boss-farm the unique chase list (see farming targets)" },
     { "id": "mythics", "text": "Craft first Mythics at 70 in Torment+ (cube: 850+ unique + 5 Fragments)" }
   ],
