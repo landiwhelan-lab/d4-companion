@@ -24,12 +24,12 @@
         { "id": "wyrmfarm", "text": "Farm Hell Wyrms / Maggots, ride between spawns, keep Threat Meter above half" },
         { "id": "undercity", "text": "(Solo) Undercity ~25+: spec ~4 nodes, boss ×4, chain Attunement Ranks 1→4. Splits the party — save for solo play" }
       ],
-      "html": "<p><b>Also worth doing:</b> chase goblins (gear/mats) · temper at level 10 (Barb: Elemental Surge on weapon; Paladin: Arbiter Duration + HP) · gear check every 10 levels to 35 then every 5 · Strongholds ~45 for fast XP · Forgotten Wisdom sigils (XP globes on kills) · Capstones give 2 skill points on first clear (verify S14 levels in-game).</p>"
+      "html": "<p><b>Also worth doing:</b> chase goblins (gear/mats) · temper from level 10 using the per-slot recipes in each gear tracker (Barb weapons: Crit Strike Chance; Paladin: Arbiter Duration + HP) · gear check every 10 levels to 35 then every 5 · Strongholds ~45 for fast XP · Forgotten Wisdom sigils (XP globes on kills) · Capstones give 2 skill points on first clear (verify S14 levels in-game).</p>"
     },
     {
       "id": "warplan-playbook",
       "title": "War Plans playbook",
-      "html": "<p><b>Spending order (Helltide method — ours):</b> reroll War Plans to take as many <b>Helltide nodes</b> as possible. 4 nodes → first center-path unlock (Wyrms <i>can</i> spawn Maggots) · 14 nodes → Maggots <b>guaranteed</b>.</p><ul><li><b>Chests give no XP.</b> Cliptis's rule: open a single chest then leave and keep progressing — spend Cinders only when you actually need gear.</li><li><b>Wyrm loop:</b> ride between Hell Wyrm spawns on your mount, kill each, move straight to the next (the Wyrm sheet / Helltides.com is the map). Keep the Threat Meter above half.</li><li><b>Whispers:</b> many Helltide objectives feed Whispers — free bonus XP on top.</li><li><b>Undercity (solo option, 25+):</b> needs 4 Undercity nodes for the right-side unlock. First 4 runs: ignore everything, sprint to the boss, kill it. Attunement Ranks reward XP globes — Rank 1: 1, Rank 2: 2, Rank 3: 3, Rank 4: 4 — and <b>they are NOT auto-collected, walk over them</b>. From Rank 4 on, pure boss-sprint repeats.</li><li><b>Balanced alternative:</b> rotate Helltides, Undercity, Nightmare Dungeons and Hordes — slightly slower XP but more materials for Tempering/Enchanting and less monotony.</li></ul>"
+      "html": "<p><b>Spending order (Helltide method — ours):</b> reroll War Plans to take as many <b>Helltide nodes</b> as possible. 4 nodes → first center-path unlock (Wyrms <i>can</i> spawn Maggots) · 14 nodes → Maggots <b>guaranteed</b>.</p><ul><li><b>Chests give no XP.</b> Cliptis's rule: open a single chest then leave and keep progressing — spend Cinders only when you actually need gear.</li><li><b>Wyrm loop:</b> ride between Hell Wyrm spawns on your mount, kill each, move straight to the next (the Wyrm sheet / Helltides.com is the map). Keep the Threat Meter above half.</li><li><b>Whispers:</b> many Helltide objectives feed Whispers — free bonus XP on top.</li><li><b>Undercity (solo option, 25+):</b> needs 4 Undercity nodes for the right-side unlock. First 4 runs: ignore everything, sprint to the boss, kill it. Attunement Ranks reward XP globes — Rank 1: 1, Rank 2: 2, Rank 3: 3, Rank 4: 4 — and <b>they are NOT auto-collected, walk over them</b>. From Rank 4 on, pure boss-sprint repeats.</li><li><b>Balanced alternative:</b> rotate Helltides, Undercity, Nightmare Dungeons and Hordes — slightly slower XP but more materials for Tempering/Enchanting and less monotony.</li></ul><p><b>Sanctum's speed extras</b> (from the Paladin leveling guide — his route, take what suits us):</p><ul><li><b>War Plan reroll:</b> reroll the War Plan if it doesn't have <b>2× Helltide nodes or more</b> up front (he even remakes the character very early if the starting plan is bad — moot for us now).</li><li><b>PvP-area chest farming:</b> when your gear falls behind, farm the PvP area chests — he does a pass when weak, again at ~61, and again at 70 to gear up fast.</li><li><b>His difficulty stance differs from ours:</b> he farms Maggots on <b>Normal</b> for speed (kills faster > per-kill XP) and skips the seasonal quest. Cliptis's ladder (what we follow) climbs Hard → Expert/Penitent. We're on Hard at 50 — decide together, but stay on the SAME difficulty as each other.</li></ul>"
     },
     {
       "id": "season",
@@ -54,7 +54,7 @@
     {
       "id": "endgame-notes",
       "title": "Endgame switch plan",
-      "html": "<ul><li><b>Leveling builds run all the way to 70</b> — no build switch at 35.</li><li>At <b>70</b>: swap each character to its endgame build (links in Resources), starting on the <b>Starter/Legendary variants</b> — all aspects, no uniques required.</li><li>Clear <b>Pit 10 at 60+</b> to unlock Torment 1 and start the ancestral/unique chase.</li><li>Work each gear slot up its ladder (see the gear trackers) → chase uniques from bosses → craft Mythics via the cube.</li></ul>"
+      "html": "<ul><li><b>Leveling builds run all the way to 70</b> — no build switch at 35. (Mobalytics starts pointing Paladins at the endgame guide from 60 — the switch window is 60–70; we're going at 70, together.)</li><li>At <b>70</b>: swap each character to its endgame build (links in Resources), starting on the <b>Starter/Legendary variants</b> — all aspects, no uniques required.</li><li><b>Sanctum's 70+ flow:</b> PvP-area gear farm → temper/enchant everything → unlock Torment → farm Maggots in Torment 3 for paragon legendary nodes → then switch to the endgame build. He reckons Torment 10 within ~10 hours after that.</li><li>Clear <b>Pit 10 at 60+</b> to unlock Torment 1 and start the ancestral/unique chase.</li><li>Work each gear slot up its ladder (see the gear trackers) → chase uniques from bosses → craft Mythics via the cube.</li></ul>"
     }
   ],
   "characters": [
@@ -103,6 +103,7 @@
           "notes": [
             "<b>Weapon assignment</b> (procs Battle-Mad / Berserking): 2H Mace → Whirlwind · Dual-wield → Lunging Strike · Polearm → Leap.",
             "<b>Fury fixes:</b> Fury Regeneration (helm/chest/pants/boots), Lucky Hit: restore Primary Resource (gloves/weapons/jewelry tempers), Resource Cost Reduction backup. Enchant for Fury Regen / Lucky Hit restore / Fury on Kill.",
+            "<b>Mercenaries:</b> Subo (hired) · Varyana (reinforcement, Opportunity).",
             "<b>Gearing order:</b> Movement Speed (boots/amulet/tempers) → Weapon DPS on the active-skill weapon (beats an aspect there) → Maximum Life everywhere → Resist/Armor once at Penitent."
           ]
         },
@@ -193,7 +194,8 @@
             "<b>Rotation:</b> 1) Falling Star on cooldown to ascend · 2) Condemn to group + Vulnerable (also ascends) · 3) Fanaticism + Defiance for buffs · 4) Advance + Flash of the Blade for mobility/uptime · 5) Consecration for damage + heal.",
             "<b>Resplendence Glyph:</b> once you have it, casting either Aura also reduces your non-Aura cooldowns by 2 seconds.",
             "<b>Skill rank priority:</b> Arbiter of Justice → Fanaticism Aura → Defiance Aura → Consecration → Advance.",
-            "<b>Temper:</b> Arbiter Duration ASAP, plus HP."
+            "<b>Temper:</b> Arbiter Duration ASAP, plus HP.",
+            "<b>Mercenaries:</b> Varyana (hired) · Raheir (reinforcement, Opportunity). Note: the ENDGAME build flips to Raheir hired + Aldkin."
           ]
         },
         {
@@ -278,7 +280,9 @@
     "Run the seasonal quest now or skip for speed? (co-op decision)",
     "Verify endgame skill rank splits + paragon board order in-game against Mobalytics",
     "How many Torment tiers does S14 actually have? (Cliptis filters mention T12)",
-    "Where does Berú of Light's Epiphany (talisman set) come from — and is the bug fixed yet?"
+    "Where does Berú of Light's Epiphany (talisman set) come from — and is the bug fixed yet?",
+    "Maggot farming difficulty: Sanctum says Normal for speed, Cliptis ladder says Hard→Expert — which nets more XP/hour for us as a duo?",
+    "Sanctum's strategy list says temper 'HP and Demonology DMG' and mentions legendary nodes for a 'Rampage Build' — odd wording, possibly copied from another guide; verify what he actually means before acting on it"
   ],
   "seed": {
     "ticks": {
