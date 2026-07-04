@@ -143,7 +143,7 @@ function renderCharacter(ch) {
     <section class="card">
       <h2>Skills ${completion(ch.id, phase, 'skills')}</h2>
       <ul class="checklist">
-        ${phase.skills.map(s => checkRow(`${ch.id}.${phase.id}.skills.${s.id}`, s.text, s.note)).join('')}
+        ${phase.skills.map(s => checkRow(`${ch.id}.${phase.id}.skills.${s.id}`, s.text + (s.rank ? ` · rank ${s.rank}` : ''), s.note)).join('')}
       </ul>
     </section>
 
@@ -212,11 +212,25 @@ function gearRow(chId, phase, g) {
   const states = C.gearStates;
   const open = openGear.has(key);
   if (phase.id !== 'endgame') {
-    // leveling: simple checkbox rows
+    // leveling: checkbox rows, expandable when they carry affix/temper detail
     const on = st === 3;
-    return `<li class="${on ? 'done' : ''}">
-      <button class="check" data-check-gear="${key}" aria-checked="${on}">${on ? '✓' : ''}</button>
-      <div class="check-label"><span><b>${esc(g.slot)}</b> — ${esc(g.item)}</span>${g.note ? `<small>${esc(g.note)}</small>` : ''}</div>
+    const hasDetail = g.affixes?.length || g.tempers?.length || g.masterwork || g.aspect || g.note;
+    return `<li class="gear lvl ${on ? 'done' : ''}">
+      <div class="gear-main" ${hasDetail ? `data-expand="${key}"` : ''}>
+        <button class="check" data-check-gear="${key}" aria-checked="${on}">${on ? '✓' : ''}</button>
+        <div class="gear-text">
+          <b>${esc(g.slot)}</b>
+          <span>${esc(g.item)}</span>
+        </div>
+        ${hasDetail ? `<span class="chev">${open ? '▾' : '▸'}</span>` : ''}
+      </div>
+      ${open && hasDetail ? `<div class="gear-detail">
+        ${g.aspect ? `<p>✨ <b>Aspect:</b> ${esc(g.aspect)}</p>` : ''}
+        ${g.affixes?.length ? `<p>🎯 <b>Affixes:</b> ${g.affixes.map(esc).join(' · ')}</p>` : ''}
+        ${g.tempers?.length ? `<p>🔨 <b>Tempers:</b> ${g.tempers.map(esc).join(' · ')}</p>` : ''}
+        ${g.masterwork ? `<p>⭐ <b>Masterwork:</b> ${esc(g.masterwork)}</p>` : ''}
+        ${g.note ? `<p>${esc(g.note)}</p>` : ''}
+      </div>` : ''}
     </li>`;
   }
   return `<li class="gear ${st === 3 ? 'done' : ''}">

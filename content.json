@@ -27,6 +27,11 @@
       "html": "<p><b>Also worth doing:</b> chase goblins (gear/mats) · temper at level 10 (Barb: Elemental Surge on weapon; Paladin: Arbiter Duration + HP) · gear check every 10 levels to 35 then every 5 · Strongholds ~45 for fast XP · Forgotten Wisdom sigils (XP globes on kills) · Capstones give 2 skill points on first clear (verify S14 levels in-game).</p>"
     },
     {
+      "id": "warplan-playbook",
+      "title": "War Plans playbook",
+      "html": "<p><b>Spending order (Helltide method — ours):</b> reroll War Plans to take as many <b>Helltide nodes</b> as possible. 4 nodes → first center-path unlock (Wyrms <i>can</i> spawn Maggots) · 14 nodes → Maggots <b>guaranteed</b>.</p><ul><li><b>Chests give no XP.</b> Cliptis's rule: open a single chest then leave and keep progressing — spend Cinders only when you actually need gear.</li><li><b>Wyrm loop:</b> ride between Hell Wyrm spawns on your mount, kill each, move straight to the next (the Wyrm sheet / Helltides.com is the map). Keep the Threat Meter above half.</li><li><b>Whispers:</b> many Helltide objectives feed Whispers — free bonus XP on top.</li><li><b>Undercity (solo option, 25+):</b> needs 4 Undercity nodes for the right-side unlock. First 4 runs: ignore everything, sprint to the boss, kill it. Attunement Ranks reward XP globes — Rank 1: 1, Rank 2: 2, Rank 3: 3, Rank 4: 4 — and <b>they are NOT auto-collected, walk over them</b>. From Rank 4 on, pure boss-sprint repeats.</li><li><b>Balanced alternative:</b> rotate Helltides, Undercity, Nightmare Dungeons and Hordes — slightly slower XP but more materials for Tempering/Enchanting and less monotony.</li></ul>"
+    },
+    {
       "id": "season",
       "title": "S14: Death Awakening",
       "html": "<p>The seasonal loop runs through Helltides, so it layers onto the plan for free. Start quest: <b>A Gospel of Despair</b> (read the scroll in Kyovashad).</p><ul><li><b>Pandemonium Ruptures</b> are rifts, most frequent in Helltides. Kill the guardians around Death's Head Idols to open one. The longer it stays open (kill monsters, close Tears), the more rewards. <b>Rupture Goblins</b> open extra ones anywhere.</li><li><b>Normal Ruptures:</b> overworld / Helltides, easy — our bread and butter.</li><li><b>Surging Ruptures:</b> replace a local event in a Helltide, chance of a Realmwalker on Mastery completion.</li><li><b>Colossal Ruptures:</b> only in the Fields of Desecration (SE of Zarbinzet), guarantee a Realmwalker.</li><li><b>Glints of Hope:</b> from closing Ruptures → spend at the rep board in Zarbinzet.</li><li><b>Pandemonium Fragments:</b> seasonal currency from rep board, Resplendent Caches, Seasonal Lair Boss. Used to craft Mythic Uniques.</li><li><b>Realmwalker 2.0 → Deathtoll Chamber:</b> mini-dungeon after a Realmwalker kill (best Superior Lair Keys). Skip while leveling.</li><li><b>The Risen:</b> Gravehounds drop orbs that empower an Exarch — intercept the orbs.</li><li><b>Season Blessing first:</b> spend Smoldering Ashes on <b>Urn of Death Awakening</b> (more Glints from all sources).</li><li><b>Freebie:</b> Overwatch collab — Elites drop Eye of the Overwatch for free cosmetics.</li></ul>"
@@ -44,7 +49,7 @@
     {
       "id": "cube",
       "title": "Horadric cube · crafting Mythics",
-      "html": "<p><b>Mythic Uniques 3.0:</b> any Unique can become Mythic.</p><ul><li>Craft at <b>level 70 in Torment+</b> via Horadric Cube → <i>Upgrade to Mythic</i>.</li><li>Recipe: <b>850+ Unique of the same slot + 5 Pandemonium Fragments</b>.</li><li>Only one <i>crafted</i> Mythic equipped at a time (dropped/cache ones unlimited).</li><li><b>Seasonal Lair Boss (Corrupted Reaper, Zarbinzet)</b> has the best Mythic + Fragment drops.</li></ul><p class='hint'>This is how we get: Melted Heart of Selig, Ring of Starless Skies, The Grandfather (Landi) and Mythic Fists of Fate / Endurant Faith (Nolan). Keep every 850+ Unique in the right slot as craft fodder.</p>"
+      "html": "<p><b>Mythic Uniques 3.0:</b> any Unique can become Mythic.</p><ul><li>Craft at <b>level 70 in Torment+</b> via Horadric Cube → <i>Upgrade to Mythic</i>.</li><li>Recipe: <b>850+ Unique of the same slot + 5 Pandemonium Fragments</b>.</li><li>Only one <i>crafted</i> Mythic equipped at a time (dropped/cache ones unlimited).</li><li><b>Seasonal Lair Boss (Corrupted Reaper, Zarbinzet)</b> has the best Mythic + Fragment drops.</li><li><b>Crafting while leveling:</b> Tempering unlocks at level 10 (recipes per slot are in each gear tracker). From Penitent onward, use Tempering + Enchanting to patch Resistances/Armor until endgame gear replaces the need.</li></ul><p class='hint'>This is how we get: Melted Heart of Selig, Ring of Starless Skies, The Grandfather (Landi) and Mythic Fists of Fate / Endurant Faith (Nolan). Keep every 850+ Unique in the right slot as craft fodder.</p>"
     },
     {
       "id": "endgame-notes",
@@ -68,26 +73,32 @@
           "id": "leveling",
           "label": "Leveling 1–70",
           "skills": [
-            { "id": "lunging", "text": "Lunging Strike", "note": "Fury generation early · assigned to Dual-wield" },
-            { "id": "whirlwind", "text": "Whirlwind → Tornado Whirlwind at 15", "note": "Build takes off at 15 · assigned to 2H Mace" },
-            { "id": "leap", "text": "Leap", "note": "Mobility + Fury · assigned to Polearm" },
-            { "id": "warcry", "text": "War Cry", "note": "Pop at full Fury before Whirlwinding a pack" },
-            { "id": "rallying", "text": "Rallying Cry", "note": "Use out of combat — it costs Fury" },
-            { "id": "ancients", "text": "Call of the Ancients", "note": "" }
+            { "id": "lunging", "text": "Lunging Strike", "rank": "1", "note": "Fury gen early · Dual-wield · upgrades: Fury Generation → Berserking → Skewer" },
+            { "id": "whirlwind", "text": "Whirlwind → Tornado at 15", "rank": "15", "note": "2H Mace · upgrades: Cost/Channel Damage Bonus → Tornado · main point dump to ~39" },
+            { "id": "leap", "text": "Leap", "rank": "15", "note": "Polearm · Pull → Fury Generation → Earthshatter early, RESPEC to Mosh around point 36" },
+            { "id": "warcry", "text": "War Cry", "rank": "15", "note": "Pop at full Fury before Whirlwinding · Ferocity → Duration → Mighty Roar · maxed last (points 68+)" },
+            { "id": "rallying", "text": "Rallying Cry", "rank": "15", "note": "Use out of combat, it costs Fury · Fortify → Potency → Booming · dump points 40–53" },
+            { "id": "ancients", "text": "Call of the Ancients", "rank": "4", "note": "Attack Speed/Damage Bonus → Empowered · dump points 54–67" }
           ],
           "gear": [
-            { "id": "helm", "slot": "Helm", "item": "Battle-Mad Aspect", "note": "Berserking source" },
-            { "id": "chest", "slot": "Chest", "item": "Aspect of Accursed Touch", "note": "" },
-            { "id": "gloves", "slot": "Gloves", "item": "Steadfast Berserker's Aspect", "note": "Fortify" },
-            { "id": "pants", "slot": "Pants", "item": "Aspect of Heavenly Strength", "note": "DR from 2H mace" },
-            { "id": "boots", "slot": "Boots", "item": "Aspect of Booming Voice", "note": "" },
-            { "id": "amulet", "slot": "Amulet", "item": "Heavy Hitting Aspect", "note": "WW damage w/ Tornado" },
-            { "id": "ring1", "slot": "Ring 1", "item": "Aspect of Furious Impulse", "note": "" },
-            { "id": "ring2", "slot": "Ring 2", "item": "Bold Chieftain's Aspect", "note": "" },
-            { "id": "mace", "slot": "Bludgeoning weapon", "item": "Aspect of Channeling", "note": "" },
-            { "id": "dw1", "slot": "Dual-wield 1", "item": "Aspect of Limitless Rage", "note": "" },
-            { "id": "dw2", "slot": "Dual-wield 2", "item": "Vehement Brawler's Aspect", "note": "Call of the Ancients damage" },
-            { "id": "slash", "slot": "Slashing weapon", "item": "Crushing Aspect", "note": "" }
+            { "id": "helm", "slot": "Helm", "item": "Battle-Mad Aspect", "affixes": ["Strength", "Maximum Life", "Fury Regeneration"], "tempers": ["Defensive: Maximum Life (Worldly Endurance)"], "note": "Berserking source · Runes: Moni + Kel (Kel invokes Rally — Fury + move speed for 8s)" },
+            { "id": "chest", "slot": "Chest", "item": "Aspect of Accursed Touch", "affixes": ["Strength", "Maximum Life", "Fury Regeneration"], "tempers": ["Defensive: Maximum Life (Worldly Endurance)"], "note": "Runes: Cir + Gar (crit chance stacking)" },
+            { "id": "gloves", "slot": "Gloves", "item": "Steadfast Berserker's Aspect", "affixes": ["Strength", "Maximum Life", "Critical Strike Chance"], "tempers": ["Offensive: Critical Strike Damage (Worldly Finesse)"], "note": "Fortify" },
+            { "id": "pants", "slot": "Pants", "item": "Aspect of Heavenly Strength", "affixes": ["Strength", "Maximum Life", "Fury Regeneration", "Gems: 2× Ruby (150 Strength each)"], "tempers": ["Defensive: Maximum Life (Worldly Endurance)"], "note": "DR from 2H mace" },
+            { "id": "boots", "slot": "Boots", "item": "Aspect of Booming Voice", "affixes": ["Strength", "Movement Speed", "Fury Regeneration", "Attacks reduce Evade cooldown by 1.5s"], "tempers": ["Mobility: Movement Speed (Natural Motion)"], "note": "" },
+            { "id": "amulet", "slot": "Amulet", "item": "Heavy Hitting Aspect", "affixes": ["Strength", "Critical Strike Chance", "Movement Speed", "Gem: Diamond (625 All Resistance)"], "tempers": ["Resource: Resource Generation (Worldly Stability)"], "note": "WW damage w/ Tornado" },
+            { "id": "ring1", "slot": "Ring 1", "item": "Aspect of Furious Impulse", "affixes": ["Strength", "Maximum Life", "Critical Strike Chance", "Gem: Diamond (625 All Resistance)"], "tempers": ["Resource: Lucky Hit — restore Primary Resource (Worldly Stability)"], "note": "" },
+            { "id": "ring2", "slot": "Ring 2", "item": "Bold Chieftain's Aspect", "affixes": ["Strength", "Maximum Life", "Critical Strike Chance", "Gem: Diamond (625 All Resistance)"], "tempers": ["Resource: Resource Generation (Worldly Stability)"], "note": "" },
+            { "id": "mace", "slot": "Bludgeoning weapon (2H)", "item": "Aspect of Channeling", "affixes": ["Strength", "Maximum Life", "Critical Strike Damage Multiplier", "Gems: 2× Skull (×32% Physical Damage)"], "tempers": ["Weapon: Critical Strike Chance (Worldly Destruction)"], "note": "Drives Whirlwind" },
+            { "id": "dw1", "slot": "Dual-wield 1", "item": "Aspect of Limitless Rage", "affixes": ["Strength", "Maximum Life", "Critical Strike Damage Multiplier", "Gem: Skull (×32% Physical Damage)"], "tempers": ["Weapon: Critical Strike Chance (Worldly Destruction)"], "note": "" },
+            { "id": "dw2", "slot": "Dual-wield 2", "item": "Vehement Brawler's Aspect", "affixes": ["Strength", "Maximum Life", "Critical Strike Damage Multiplier", "Gem: Skull (×32% Physical Damage)"], "tempers": ["Weapon: Critical Strike Chance (Worldly Destruction)"], "note": "Call of the Ancients damage" },
+            { "id": "slash", "slot": "Slashing weapon (2H)", "item": "Crushing Aspect", "affixes": ["Strength", "Maximum Life", "Critical Strike Damage Multiplier", "Gems: 2× Skull (×32% Physical Damage)"], "tempers": ["Weapon: Critical Strike Chance (Worldly Destruction)"], "note": "Drives Leap" },
+            { "id": "seal", "slot": "Seal", "item": "Seal (priority 1)", "note": "Planner shows an unnamed Seal as top talisman priority" },
+            { "id": "charm1", "slot": "Charm", "item": "Fer of Practiced Technique", "note": "Talisman priority 2" },
+            { "id": "charm2", "slot": "Charm", "item": "Mlor of Practiced Technique", "note": "Talisman priority 3" },
+            { "id": "charm3", "slot": "Charm", "item": "Phoba of Practiced Technique", "note": "Talisman priority 4" },
+            { "id": "charm4", "slot": "Charm", "item": "Phoba of Mastery", "note": "Talisman priority 5" },
+            { "id": "charm5", "slot": "Charm", "item": "Fer of Mastery", "note": "Talisman priority 6" }
           ],
           "notes": [
             "<b>Weapon assignment</b> (procs Battle-Mad / Berserking): 2H Mace → Whirlwind · Dual-wield → Lunging Strike · Polearm → Leap.",
@@ -154,28 +165,33 @@
           "id": "leveling",
           "label": "Leveling 1–70",
           "skills": [
-            { "id": "fallingstar", "text": "Falling Star", "note": "Ascend into Arbiter — use on cooldown" },
-            { "id": "advance", "text": "Advance → Flash of the Blade", "note": "Mobility + Arbiter uptime · plain Advance before 15" },
-            { "id": "condemn", "text": "Condemn", "note": "Groups monsters + applies Vulnerable" },
-            { "id": "fanaticism", "text": "Fanaticism Aura", "note": "Party offense buff" },
-            { "id": "defiance", "text": "Defiance Aura", "note": "Party defense buff" },
-            { "id": "consecration", "text": "Consecration", "note": "Damage + heal" },
-            { "id": "disciple", "text": "Disciple Oath", "note": "Arbiter Form source (level 15 spec quest)" }
+            { "id": "fallingstar", "text": "Falling Star", "note": "Ascend into Arbiter on cooldown · upgrades: Vulnerable → Cooldown Reduction → Starfall (late) · heavy point dump 70+" },
+            { "id": "advance", "text": "Advance → Flash of the Blade", "note": "Unhindered → Crit Chance · add Flash of the Blade late (~point 67): it makes Advance a Disciple skill (ascends you) but adds a cooldown — before 15, spam plain Advance" },
+            { "id": "condemn", "text": "Condemn", "note": "Groups monsters + Vulnerable · also ascends you via Disciple · Gather the Guilty → Cooldown Reduction (points 47–49)" },
+            { "id": "fanaticism", "text": "Fanaticism Aura", "note": "Party offense buff · Resource Generation + Extra Passive Stack · big dump points 24–35" },
+            { "id": "defiance", "text": "Defiance Aura", "note": "Party defense buff · Maximum Life → Bonus Healing · dump points 36–46" },
+            { "id": "consecration", "text": "Consecration", "note": "Damage + heal · Hallowed Ground → Resource Generation → Duration · dump points 50–63" },
+            { "id": "disciple", "text": "Disciple Oath", "note": "Arbiter Form source (level 15 spec quest)" },
+            { "id": "passives", "text": "Passives: Rite of Vengeance · Rite of Prayer · Seraphs' Wings", "note": "Picked up early (points 9, 13, 19)" }
           ],
           "gear": [
-            { "id": "helm", "slot": "Helm", "item": "Aspect of Firm Decree", "note": "" },
-            { "id": "chest", "slot": "Chest", "item": "Aspect of Hale's Salve", "note": "" },
-            { "id": "gloves", "slot": "Gloves", "item": "Aspect of Tyrael's Jurisdiction", "note": "" },
-            { "id": "pants", "slot": "Pants", "item": "Aspect of the Indomitable", "note": "" },
-            { "id": "boots", "slot": "Boots", "item": "Aspect of Unstoppable Force", "note": "" },
-            { "id": "amulet", "slot": "Amulet", "item": "Aspect of Celestial Strife", "note": "Chase: Sanctis of Kethamar — if found early, equip it and move Celestial Strife to the ring (replacing Utmost Glory)" },
-            { "id": "ring1", "slot": "Ring 1", "item": "Aspect of Ascension", "note": "" },
-            { "id": "ring2", "slot": "Ring 2", "item": "Aspect of Utmost Glory", "note": "" },
-            { "id": "weapon", "slot": "Weapon", "item": "Aspect of Tyrael's Jurisdiction", "note": "" }
+            { "id": "helm", "slot": "Helm", "item": "Aspect of the Disciple", "affixes": ["Strength", "Maximum Life", "Armor", "Resistance to All Elements"], "tempers": ["Utility: Arbiter Duration (Aura Innovation)"], "note": "Runes: Cir + Gar · CHANGED from Firm Decree (build updated 2 Jul)" },
+            { "id": "chest", "slot": "Chest", "item": "Aspect of Angelic Masterwork", "affixes": ["Strength", "Maximum Life", "Armor", "Ranks to Aura Skills", "Gems: 2× Ruby (150 Strength each)"], "tempers": ["Utility: Arbiter Duration"], "note": "CHANGED from Hale's Salve (build updated 2 Jul)" },
+            { "id": "gloves", "slot": "Gloves", "item": "Aspect of Holy Punishment", "affixes": ["Strength", "Maximum Life", "Armor", "Critical Strike Chance"], "tempers": ["Utility: Arbiter Duration (Aura Innovation)"], "note": "CHANGED from Tyrael's Jurisdiction — that aspect goes on the weapon (build updated 2 Jul)" },
+            { "id": "pants", "slot": "Pants", "item": "Aspect of Heavenly Strength", "affixes": ["Strength", "Maximum Life", "Armor", "Resistance to All Elements"], "tempers": ["Defensive: Maximum Life (Worldly Endurance)"], "note": "Runes: Cem + Qua (stacking move speed) · CHANGED from Indomitable (build updated 2 Jul)" },
+            { "id": "boots", "slot": "Boots", "item": "Aspect of Unstoppable Force", "affixes": ["Strength", "Maximum Life", "Armor", "Movement Speed", "Evade grants +125% Move Speed for 1.5s"], "tempers": ["Mobility: Movement Speed (Natural Motion)"], "note": "" },
+            { "id": "amulet", "slot": "Amulet", "item": "Aspect of Celestial Strife", "affixes": ["Strength", "Critical Strike Chance", "Cooldown Reduction", "Maximum Life", "Gem: Diamond (625 All Resistance)"], "tempers": ["Utility: Arbiter Duration (Aura Innovation)"], "note": "Chase: Sanctis of Kethamar — if found early, equip it and move Celestial Strife to the ring (replacing Utmost Glory)" },
+            { "id": "ring1", "slot": "Ring 1", "item": "Aspect of Ascension", "affixes": ["Strength", "Maximum Life", "Critical Strike Chance", "Cooldown Reduction", "Gem: Diamond (625 All Resistance)"], "tempers": ["Offensive: Disciple Damage (Guardian Finesse)"], "note": "" },
+            { "id": "ring2", "slot": "Ring 2", "item": "Aspect of Utmost Glory", "affixes": ["Strength", "Maximum Life", "Critical Strike Chance", "Vulnerable Damage Multiplier", "Gem: Diamond (625 All Resistance)"], "tempers": ["Offensive: Wing Strike Damage (Guardian Finesse)"], "note": "" },
+            { "id": "weapon", "slot": "Weapon (2H)", "item": "Aspect of Tyrael's Jurisdiction", "affixes": ["Strength", "Maximum Life", "Life On Hit", "Weapon Damage", "Gem: Ruby (×32% Fire & Holy Damage)"], "tempers": ["Offensive: Wing Strike Damage (Guardian Finesse)"], "note": "" },
+            { "id": "charm1", "slot": "Charm", "item": "Phoba of Lethality", "note": "Talisman priority 1 (charm slot 6)" },
+            { "id": "charm2", "slot": "Charm", "item": "Mlor of Lethality", "note": "Talisman priority 2 (charm slot 2)" },
+            { "id": "charm3", "slot": "Charm", "item": "Fer of Lethality", "note": "Talisman priority 3 (charm slot 1)" }
           ],
           "notes": [
             "<b>Core:</b> stay in Arbiter Form (Disciple Oath, level 15) so Wing Strikes auto-hit while gliding. Before 15: plain Advance.",
-            "<b>Uptime:</b> Falling Star on cooldown · Condemn · Advance → Flash of the Blade after 15.",
+            "<b>Rotation:</b> 1) Falling Star on cooldown to ascend · 2) Condemn to group + Vulnerable (also ascends) · 3) Fanaticism + Defiance for buffs · 4) Advance + Flash of the Blade for mobility/uptime · 5) Consecration for damage + heal.",
+            "<b>Resplendence Glyph:</b> once you have it, casting either Aura also reduces your non-Aura cooldowns by 2 seconds.",
             "<b>Skill rank priority:</b> Arbiter of Justice → Fanaticism Aura → Defiance Aura → Consecration → Advance.",
             "<b>Temper:</b> Arbiter Duration ASAP, plus HP."
           ]
