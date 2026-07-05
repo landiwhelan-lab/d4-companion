@@ -194,6 +194,46 @@ button.danger { border-color: var(--red); color: var(--red); }
 .ext { color: var(--muted); }
 .plain li { padding: .3rem 0; color: var(--muted); font-size: .9rem; }
 
+/* ---- glyphs, boards, bosses ---- */
+h3 { font-size: .85rem; margin: 1rem 0 .4rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); display: flex; gap: .5rem; align-items: baseline; flex-wrap: wrap; }
+.glyph-row { display: flex; align-items: center; gap: .6rem; padding: .3rem 0; border-bottom: 1px solid #241f2b; }
+.glyph-row:last-child { border-bottom: 0; }
+.gname { flex: 1; font-size: .92rem; }
+.gmiles { display: flex; gap: .25rem; }
+.gmiles em {
+  font-style: normal; font-size: .7rem; padding: .15rem .4rem; border-radius: 6px;
+  border: 1px solid var(--line); color: var(--muted);
+}
+.gmiles em.hit:first-child { color: #111; background: var(--amber); border-color: var(--amber); font-weight: 700; }
+.gmiles em.hit:last-child { color: #111; background: var(--gold); border-color: var(--gold); font-weight: 700; }
+.stepper.small button { width: 34px; height: 34px; font-size: 1rem; border-radius: 9px; }
+.stepper.small b { font-size: 1rem; min-width: 2rem; }
+.stepper b.amber { color: var(--amber); }
+.stepper b.gold { color: var(--gold); }
+.board-scroll { overflow-x: auto; padding-bottom: .3rem; }
+.board { display: grid; grid-template-columns: repeat(21, 21px); gap: 2px; width: max-content; }
+.btile {
+  width: 21px; height: 21px; min-height: 0; padding: 0; border-radius: 4px;
+  background: #171320; border: 1px solid #232030;
+}
+.btile.tn { border-color: #6b5a3a; }
+.btile.tm { border-color: #4a7bd8; }
+.btile.tr { border-color: #c8a24a; }
+.btile.tl { border-color: #e07a2f; box-shadow: 0 0 4px #e07a2f66; }
+.btile.tg { border-color: #b06ae0; box-shadow: 0 0 4px #b06ae066; }
+.btile.tgate { background: #2b2531; border-color: #2b2531; border-radius: 50%; }
+.btile.on.tn, .btile.on { background: #6b5a3a; }
+.btile.on.tm { background: #4a7bd8; }
+.btile.on.tr { background: #c8a24a; }
+.btile.on.tl { background: #e07a2f; }
+.btile.on.tg { background: #b06ae0; }
+.boss-row { display: flex; align-items: center; gap: .8rem; padding: .55rem 0; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.boss-row:last-of-type { border-bottom: 0; }
+.boss-info { flex: 1; min-width: 10rem; }
+.boss-info small { display: block; color: var(--muted); font-size: .78rem; }
+.boss-counters { display: flex; gap: .9rem; }
+.boss-counters label { font-size: .7rem; color: var(--muted); text-transform: uppercase; text-align: center; }
+
 /* ---- toast ---- */
 #toast {
   position: fixed; left: 50%; bottom: 1.2rem; transform: translateX(-50%);

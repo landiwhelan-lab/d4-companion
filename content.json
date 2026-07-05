@@ -92,9 +92,44 @@
             { "id": "b3", "text": "Board 3: Blood Rage — socket Twister (+ legendary node)" },
             { "id": "b4", "text": "Board 4: Carnage — socket Marshal (+ legendary node)" },
             { "id": "b5", "text": "Board 5: Flawless Technique — socket Exploit" },
-            { "id": "glyph15", "text": "Glyphs to 15 — level order: Wrath → Twister → Marshal → Challenger → Exploit" },
-            { "id": "glyph46", "text": "Glyphs to 46 (Legendary upgrades), same order" },
             { "id": "allpoints", "text": "All paragon points spent → ready for the Uniques variant" }
+          ],
+          "glyphs": [
+            { "id": "wrath", "name": "Wrath (Warbringer)" },
+            { "id": "twister", "name": "Twister (Blood Rage)" },
+            { "id": "marshal", "name": "Marshal (Carnage)" },
+            { "id": "challenger", "name": "Challenger (Starter)" },
+            { "id": "exploit", "name": "Exploit (Flawless Technique)" }
+          ],
+          "boards": [
+            {
+              "id": "warbringer",
+              "name": "Board 2 · Warbringer (Wrath)",
+              "note": "PILOT board, reconstructed from a screenshot — tiles may be off by one here and there. Any tile is tappable, so correct it to match your in-game board as you spend points. Blue = magic, gold = rare, orange = legendary, purple = glyph socket.",
+              "grid": [
+                "..........#..........",
+                "..........n..........",
+                "..........n..........",
+                "..........n..........",
+                "..........n..........",
+                "..........n.mm.......",
+                "..........n.m..rm....",
+                "..........n....r.r...",
+                "....mm....n....r.....",
+                "...mrrm...n..........",
+                "#nnnrLr...n..........",
+                "....rrr...n..........",
+                "......n...n..........",
+                "......n...n....r.....",
+                "......n...n...rGr....",
+                "......nn..n....r.r...",
+                ".......n..n..........",
+                ".......nn.n..........",
+                "..........n..........",
+                "..........n..........",
+                "..........#.........."
+              ]
+            }
           ],
           "notes": [
             "<b>Damage engine:</b> Rallying Cry = movement speed + Fury; damage stacks from Mighty Roar War Cry (+ Challenging Shout / Berserking Wrath of the Berserker in later variants).",
@@ -158,8 +193,14 @@
             { "id": "b5", "text": "Board 5: Preacher" },
             { "id": "glyphs", "text": "Socket remaining glyphs — priority: Spirit → Resplendence → Feverous → Outmatch → Chip (board-to-glyph mapping: verify on planner)" },
             { "id": "nodeprio", "text": "Node priority: Legendary Nodes → Glyph Activation → Max Life → Maxing Glyphs → Damage rares → Armor rares → Res rares" },
-            { "id": "glyph15", "text": "Glyphs to 15, then 46 (same priority order)" },
             { "id": "allpoints", "text": "All paragon points spent → move to the Endgame variant" }
+          ],
+          "glyphs": [
+            { "id": "spirit", "name": "Spirit" },
+            { "id": "resplendence", "name": "Resplendence (Starter board)" },
+            { "id": "feverous", "name": "Feverous" },
+            { "id": "outmatch", "name": "Outmatch" },
+            { "id": "chip", "name": "Chip" }
           ],
           "notes": [
             "<b>Rotation:</b> 1) Fortress for the Resolve damage buff (re-cast to reposition) · 2) Aegis to cap Block · 3) Fanaticism + Defiance on cooldown (Resplendence trims other CDs — keeps Fortress up) · 4) Rally to 3 stacks · Embattled + Zealot Oath = instant full heal.",
@@ -193,6 +234,13 @@
       { "label": "Season of Death Awakening overview", "url": "https://news.blizzard.com/en-us/article/24268702/hunt-the-death-cult-in-season-of-death-awakening" },
       { "label": "Patch 3.1.0 notes", "url": "https://news.blizzard.com/en-us/article/24287406/diablo-iv-patch-notes" }
     ]}
+  ],
+  "bosses": [
+    { "id": "butcher", "name": "Bloodied Butcher", "where": "Gea Kul", "drops": "Ramaladni's (L) + Red Sermon (N) — the duo farm" },
+    { "id": "bartuc", "name": "Bartuc", "where": "see loot-table guide", "drops": "Tuskhelm of Joritz (L)" },
+    { "id": "grigoire", "name": "Grigoire", "where": "Hall of the Penitent, S of Ked Bardu", "drops": "Gohr's Grips (L)" },
+    { "id": "astaroth", "name": "Astaroth", "where": "see loot-table guide", "drops": "Griswold's Opus (N charm)" },
+    { "id": "reaper", "name": "Corrupted Reaper (Lair)", "where": "Zarbinzet", "drops": "Mythics + Pandemonium Fragments (both)" }
   ],
   "roadmap": [
     { "id": "sync-warplans", "text": "War Plans synced as a party (re-do after any reroll)" },

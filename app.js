@@ -161,7 +161,9 @@ function renderCharacter(ch) {
       <ul class="checklist">
         ${phase.paragon.map(p => checkRow(`${ch.id}.paragon.${p.id}`, p.text)).join('')}
       </ul>
-      <p class="hint">Board layouts live on the Mobalytics paragon tab (link above) — mini-boards in the app are a later upgrade.</p>
+      ${phase.glyphs ? glyphTracker(ch.id, phase.glyphs) : ''}
+      ${(phase.boards || []).map(b => boardGrid(ch.id, b)).join('')}
+      <p class="hint">Full board layouts live on the Mobalytics paragon tab (link above).</p>
     </section>` : ''}
 
     <section class="card">
@@ -266,6 +268,47 @@ function gearCompletion(chId, phase) {
   return `<span class="count">${done}/${total} · ${pct}%</span><span class="bar"><span style="width:${pct}%"></span></span>`;
 }
 
+function glyphTracker(chId, glyphs) {
+  return `<div class="glyphs">
+    <h3>Glyph levels <span class="count">15 = radius · 46 = Legendary upgrade</span></h3>
+    ${glyphs.map(g => {
+      const key = `${chId}.glyph.${g.id}`;
+      const lvl = Number(store.tick(key, 0));
+      const cls = lvl >= 46 ? 'gold' : lvl >= 15 ? 'amber' : '';
+      return `<div class="glyph-row">
+        <span class="gname">${esc(g.name)}</span>
+        <span class="gmiles"><em class="${lvl >= 15 ? 'hit' : ''}">15</em><em class="${lvl >= 46 ? 'hit' : ''}">46</em></span>
+        <div class="stepper small">
+          <button data-step="${key}" data-d="-1" data-min="0" data-max="100">−</button>
+          <b class="${cls}">${lvl}</b>
+          <button data-step="${key}" data-d="1" data-min="0" data-max="100">+</button>
+        </div>
+      </div>`;
+    }).join('')}
+  </div>`;
+}
+
+const TILE_CLASS = { n: 'tn', m: 'tm', r: 'tr', L: 'tl', G: 'tg', '#': 'tgate' };
+function boardGrid(chId, b) {
+  let target = 0, got = 0;
+  const cells = [];
+  b.grid.forEach((row, r) => {
+    [...row].forEach((c, col) => {
+      const key = `${chId}.board.${b.id}.t${r}x${col}`;
+      const on = !!store.tick(key, false);
+      if (c !== '.' && c !== '#') { target++; if (on) got++; }
+      cells.push(c === '#'
+        ? `<span class="btile tgate"></span>`
+        : `<button class="btile ${TILE_CLASS[c] || ''} ${on ? 'on' : ''}" data-check="${key}" aria-pressed="${on}"></button>`);
+    });
+  });
+  return `<div class="board-wrap">
+    <h3>${esc(b.name)} <span class="count">${got}/${target}</span></h3>
+    <div class="board-scroll"><div class="board">${cells.join('')}</div></div>
+    ${b.note ? `<p class="hint">${esc(b.note)}</p>` : ''}
+  </div>`;
+}
+
 function targetRow(t) {
   return `<li class="${t.done ? 'done' : ''}">
     <button class="check" data-target-done="${t.id}" aria-checked="${t.done}">${t.done ? '✓' : ''}</button>
@@ -297,6 +340,31 @@ function renderSessions() {
       <input name="notes" placeholder="What we did">
       <button>Add session</button>
     </form>
+  </section>
+
+  <section class="card">
+    <h2>Boss runs</h2>
+    ${C.bosses.map(bs => `
+      <div class="boss-row">
+        <div class="boss-info"><b>${esc(bs.name)}</b><small>${esc(bs.where)} · ${esc(bs.drops)}</small></div>
+        <div class="boss-counters">
+          <label>runs
+            <div class="stepper small">
+              <button data-step="boss.${bs.id}.runs" data-d="-1" data-min="0" data-max="999">−</button>
+              <b>${store.tick(`boss.${bs.id}.runs`, 0)}</b>
+              <button data-step="boss.${bs.id}.runs" data-d="1" data-min="0" data-max="999">+</button>
+            </div>
+          </label>
+          <label>mats
+            <div class="stepper small">
+              <button data-step="boss.${bs.id}.mats" data-d="-1" data-min="0" data-max="999">−</button>
+              <b>${store.tick(`boss.${bs.id}.mats`, 0)}</b>
+              <button data-step="boss.${bs.id}.mats" data-d="1" data-min="0" data-max="999">+</button>
+            </div>
+          </label>
+        </div>
+      </div>`).join('')}
+    <p class="hint">Mats = summon materials banked per boss (exact material names/counts: check in-game).</p>
   </section>
 
   <section class="card">
