@@ -2,59 +2,45 @@
   "meta": {
     "season": "Season 14 · Death Awakening",
     "appTitle": "D4 Co-op Companion",
-    "tagline": "Helltides are home base. Nodes → Wyrms → Maggots.",
-    "plan": "Funnel War Plan points into Helltide nodes to unlock guaranteed Hell Wyrm Maggots (biggest XP). Ruptures and Cinder collection happen inside Helltides for free. Undercity Attunement rank-ups are a solo burst option. The Wyrm sheet / Helltides.com is the map."
+    "tagline": "Endgame era: Torment climb · unique chase · Mythic crafting.",
+    "plan": "Both at 70 on the endgame builds (starter variants). Tick each aspect, affix and temper as drops land. Finish the paragon board, complete the gear card, then move up a variant. Bloodied Butcher drops BOTH chase weapons — farm him together."
   },
   "difficulties": ["Normal", "Hard", "Expert", "Penitent", "Torment 1", "Torment 2", "Torment 3", "Torment 4", "Torment 5", "Torment 6", "Torment 7", "Torment 8", "Torment 9", "Torment 10", "Torment 11", "Torment 12"],
-  "gearStates": ["—", "Stopgap", "Got it", "Perfected"],
   "guide": [
     {
-      "id": "ladder",
-      "title": "Difficulty ladder",
-      "html": "<table><tr><th>Level</th><th>Do this</th></tr><tr><td>Start</td><td>Normal (Hard for more XP if you can handle it)</td></tr><tr><td>~15</td><td>Swap to Hard when comfortable. Bank ~800 Cinders first, they carry over</td></tr><tr><td>~50</td><td>Move to <b>Expert / Penitent</b> to prep Torment 1</td></tr><tr><td>60+</td><td>Clear Pit 10 → unlock Torment 1 → farm ancestrals</td></tr></table><p class='hint'>Both players stay on the same difficulty so XP and scaling line up.</p>"
+      "id": "torment",
+      "title": "Torment climb",
+      "html": "<ul><li>Clear <b>Pit 10</b> → unlocks <b>Torment 1</b> → ancestral drops begin.</li><li><b>Sanctum's 70+ flow:</b> gear catch-up (PvP-area chests) → temper/enchant everything → unlock Torments → <b>farm Maggots in Torment 3</b> until the paragon legendary nodes are in → push. He reckons ~Torment 10 inside 10 hours.</li><li>Move up a Torment as soon as it feels comfortable — higher tiers = better gear odds. Stay on the <b>same tier as each other</b>.</li><li class='hint'>S14 Torment count unverified — Cliptis's filters mention T12; confirm the actual ladder in-game.</li></ul>"
     },
     {
-      "id": "route",
-      "title": "Leveling route",
-      "items": [
-        { "id": "warplans", "text": "Unlock War Plans in Skovos, then talk to the Cube for board level 2" },
-        { "id": "helltide15", "text": "Helltides to ~15. S14: Helltide War Plan progress = collect 75 Cinders (250 in Torment I+), not chest-opening" },
-        { "id": "nodes4", "text": "Reach 4 Helltide nodes → Hell Wyrms can spawn Maggots" },
-        { "id": "nodes14", "text": "Reach 14 Helltide nodes → Maggots guaranteed (the XP jump)" },
-        { "id": "wyrmfarm", "text": "Farm Hell Wyrms / Maggots, ride between spawns, keep Threat Meter above half" },
-        { "id": "undercity", "text": "(Solo) Undercity ~25+: spec ~4 nodes, boss ×4, chain Attunement Ranks 1→4. Splits the party — save for solo play" }
-      ],
-      "html": "<p><b>Also worth doing:</b> chase goblins (gear/mats) · temper from level 10 using the per-slot recipes in each gear tracker (Barb weapons: Crit Strike Chance; Paladin: Arbiter Duration + HP) · gear check every 10 levels to 35 then every 5 · Strongholds ~45 for fast XP · Forgotten Wisdom sigils (XP globes on kills) · Capstones give 2 skill points on first clear (verify S14 levels in-game).</p>"
-    },
-    {
-      "id": "warplan-playbook",
-      "title": "War Plans playbook",
-      "html": "<p><b>Spending order (Helltide method — ours):</b> reroll War Plans to take as many <b>Helltide nodes</b> as possible. 4 nodes → first center-path unlock (Wyrms <i>can</i> spawn Maggots) · 14 nodes → Maggots <b>guaranteed</b>.</p><ul><li><b>Chests give no XP.</b> Cliptis's rule: open a single chest then leave and keep progressing — spend Cinders only when you actually need gear.</li><li><b>Wyrm loop:</b> ride between Hell Wyrm spawns on your mount, kill each, move straight to the next (the Wyrm sheet / Helltides.com is the map). Keep the Threat Meter above half.</li><li><b>Whispers:</b> many Helltide objectives feed Whispers — free bonus XP on top.</li><li><b>Undercity (solo option, 25+):</b> needs 4 Undercity nodes for the right-side unlock. First 4 runs: ignore everything, sprint to the boss, kill it. Attunement Ranks reward XP globes — Rank 1: 1, Rank 2: 2, Rank 3: 3, Rank 4: 4 — and <b>they are NOT auto-collected, walk over them</b>. From Rank 4 on, pure boss-sprint repeats.</li><li><b>Balanced alternative:</b> rotate Helltides, Undercity, Nightmare Dungeons and Hordes — slightly slower XP but more materials for Tempering/Enchanting and less monotony.</li></ul><p><b>Sanctum's speed extras</b> (from the Paladin leveling guide — his route, take what suits us):</p><ul><li><b>War Plan reroll:</b> reroll the War Plan if it doesn't have <b>2× Helltide nodes or more</b> up front (he even remakes the character very early if the starting plan is bad — moot for us now).</li><li><b>PvP-area chest farming:</b> when your gear falls behind, farm the PvP area chests — he does a pass when weak, again at ~61, and again at 70 to gear up fast.</li><li><b>His difficulty stance differs from ours:</b> he farms Maggots on <b>Normal</b> for speed (kills faster > per-kill XP) and skips the seasonal quest. Cliptis's ladder (what we follow) climbs Hard → Expert/Penitent. We're on Hard at 50 — decide together, but stay on the SAME difficulty as each other.</li></ul>"
+      "id": "farming",
+      "title": "Farming loop (paragon XP & mats)",
+      "html": "<ul><li><b>Helltide Maggot farm still pays</b> post-70 for paragon XP: War Plan Helltide nodes (4 = Maggots possible, 14 = guaranteed), ride between Wyrm spawns, Threat Meter above half. Helltides.com is the map.</li><li><b>One-chest rule:</b> chests give no XP — open one, move on; spend Cinders only when you need gear.</li><li><b>Whispers</b> stack on top of Helltide objectives for free XP.</li><li><b>Undercity</b> (solo bursts): Attunement Ranks drop XP globes (1/2/3/4 per rank) — <b>they are NOT auto-collected</b>. From Rank 4: pure boss-sprints.</li><li><b>PvP-area chests</b> (Sanctum): fast gear catch-up whenever your gear lags.</li><li><b>Boss rotation:</b> Bloodied Butcher (both weapons!), Bartuc (Tuskhelm), Grigoire (Gohr's), Astaroth (Griswold's Opus), Corrupted Reaper in Zarbinzet (Mythics + Fragments).</li></ul>"
     },
     {
       "id": "season",
       "title": "S14: Death Awakening",
-      "html": "<p>The seasonal loop runs through Helltides, so it layers onto the plan for free. Start quest: <b>A Gospel of Despair</b> (read the scroll in Kyovashad).</p><ul><li><b>Pandemonium Ruptures</b> are rifts, most frequent in Helltides. Kill the guardians around Death's Head Idols to open one. The longer it stays open (kill monsters, close Tears), the more rewards. <b>Rupture Goblins</b> open extra ones anywhere.</li><li><b>Normal Ruptures:</b> overworld / Helltides, easy — our bread and butter.</li><li><b>Surging Ruptures:</b> replace a local event in a Helltide, chance of a Realmwalker on Mastery completion.</li><li><b>Colossal Ruptures:</b> only in the Fields of Desecration (SE of Zarbinzet), guarantee a Realmwalker.</li><li><b>Glints of Hope:</b> from closing Ruptures → spend at the rep board in Zarbinzet.</li><li><b>Pandemonium Fragments:</b> seasonal currency from rep board, Resplendent Caches, Seasonal Lair Boss. Used to craft Mythic Uniques.</li><li><b>Realmwalker 2.0 → Deathtoll Chamber:</b> mini-dungeon after a Realmwalker kill (best Superior Lair Keys). Skip while leveling.</li><li><b>The Risen:</b> Gravehounds drop orbs that empower an Exarch — intercept the orbs.</li><li><b>Season Blessing first:</b> spend Smoldering Ashes on <b>Urn of Death Awakening</b> (more Glints from all sources).</li><li><b>Freebie:</b> Overwatch collab — Elites drop Eye of the Overwatch for free cosmetics.</li></ul>"
-    },
-    {
-      "id": "coop",
-      "title": "Co-op synergy",
-      "html": "<ul><li><b>Auras:</b> Landi stays near him for <b>Fanaticism</b> (offense) and <b>Defiance</b> (survivability) — they only buff party members in range.</li><li><b>Condemn:</b> he groups monsters + applies <b>Vulnerable</b> (a damage multiplier). Whirlwind the clustered, Vulnerable pack.</li><li><b>Roles:</b> he is the tanky grouper/buffer, she is the AoE shredder. His damage ramps, hers is instant wide AoE.</li><li><b>Hell Wyrm duo:</b> stack to melt Wyrms, or split adjacent spawns and leapfrog.</li><li><b>Decision to align:</b> his guide skips the seasonal quest for speed, ours does it for Glints/rep. Pick one together.</li></ul>"
-    },
-    {
-      "id": "warplan-sync",
-      "title": "Syncing War Plans",
-      "html": "<p>Requirements, in the order that usually blocks it:</p><ol><li><b>Both must have War Plans unlocked</b> (in Skovos). A fresh character that hasn't unlocked it can't sync.</li><li><b>Be in an actual party</b>, not just the same world.</li><li><b>Both stand in Temis</b> at the War Plans board.</li><li>Pick <b>“New Plan For Party”</b> (only appears when partied) — not plain “New Plan”.</li><li>Initiator pays <b>2 Marks of El'Druin</b> (you each have 3). A <b>vote pops for the other player who must actively accept</b>.</li><li>On acceptance, the initiator's board resets and copies to both. Works regardless of War Plan level, Torment, or campaign state.</li></ol><p class='hint'>Most common failures: his War Plans isn't unlocked yet, or the accept-vote popup gets missed.</p>"
+      "html": "<p>The seasonal loop runs through Helltides — it layers onto the farming loop for free. Start quest: <b>A Gospel of Despair</b> (scroll in Kyovashad) if we haven't yet.</p><ul><li><b>Pandemonium Ruptures:</b> rifts, most frequent in Helltides — kill the guardians at Death's Head Idols. Longer open = more rewards. Rupture Goblins open extras anywhere.</li><li><b>Colossal Ruptures</b> (Fields of Desecration, SE of Zarbinzet) guarantee a <b>Realmwalker</b> → Deathtoll Chamber → best Superior Lair Keys. Now worth chasing (we skipped while leveling).</li><li><b>Glints of Hope</b> → rep board in Zarbinzet. <b>Pandemonium Fragments</b> (rep board, Resplendent Caches, Seasonal Lair Boss) → Mythic crafting fuel.</li><li><b>Season Blessing:</b> Urn of Death Awakening (more Glints) with Smoldering Ashes.</li><li><b>The Risen:</b> intercept Gravehound orbs before they empower the Exarch.</li></ul>"
     },
     {
       "id": "cube",
       "title": "Horadric cube · crafting Mythics",
-      "html": "<p><b>Mythic Uniques 3.0:</b> any Unique can become Mythic.</p><ul><li>Craft at <b>level 70 in Torment+</b> via Horadric Cube → <i>Upgrade to Mythic</i>.</li><li>Recipe: <b>850+ Unique of the same slot + 5 Pandemonium Fragments</b>.</li><li>Only one <i>crafted</i> Mythic equipped at a time (dropped/cache ones unlimited).</li><li><b>Seasonal Lair Boss (Corrupted Reaper, Zarbinzet)</b> has the best Mythic + Fragment drops.</li><li><b>Crafting while leveling:</b> Tempering unlocks at level 10 (recipes per slot are in each gear tracker). From Penitent onward, use Tempering + Enchanting to patch Resistances/Armor until endgame gear replaces the need.</li></ul><p class='hint'>This is how we get: Melted Heart of Selig, Ring of Starless Skies, The Grandfather (Landi) and Mythic Fists of Fate / Endurant Faith (Nolan). Keep every 850+ Unique in the right slot as craft fodder.</p>"
+      "html": "<p><b>Mythic Uniques 3.0:</b> any Unique can become Mythic.</p><ul><li>Craft at <b>level 70 in Torment+</b> via Horadric Cube → <i>Upgrade to Mythic</i>.</li><li>Recipe: <b>850+ Unique of the same slot + 5 Pandemonium Fragments</b>.</li><li>Only one <i>crafted</i> Mythic equipped at a time (dropped/cache ones unlimited).</li><li><b>Corrupted Reaper (Zarbinzet)</b> has the best Mythic + Fragment drops.</li><li><b>Keep every 850+ Unique in the right slot as craft fodder.</b></li></ul><p class='hint'>The chase: Melted Heart of Selig, Ring of Starless Skies, The Grandfather (Landi) · Mythic Crown of Lucion + Mythic Fists of Fate (Nolan).</p>"
     },
     {
-      "id": "endgame-notes",
-      "title": "Endgame switch plan",
-      "html": "<ul><li><b>Leveling builds run all the way to 70</b> — no build switch at 35. (Mobalytics starts pointing Paladins at the endgame guide from 60 — the switch window is 60–70; we're going at 70, together.)</li><li>At <b>70</b>: swap each character to its endgame build (links in Resources), starting on the <b>Starter/Legendary variants</b> — all aspects, no uniques required.</li><li><b>Sanctum's 70+ flow:</b> PvP-area gear farm → temper/enchant everything → unlock Torment → farm Maggots in Torment 3 for paragon legendary nodes → then switch to the endgame build. He reckons Torment 10 within ~10 hours after that.</li><li>Clear <b>Pit 10 at 60+</b> to unlock Torment 1 and start the ancestral/unique chase.</li><li>Work each gear slot up its ladder (see the gear trackers) → chase uniques from bosses → craft Mythics via the cube.</li></ul>"
+      "id": "coop",
+      "title": "Co-op synergy (WW + Zeal)",
+      "html": "<ul><li><b>The auras still carry:</b> Nolan's Fanaticism (offense) + Defiance (defense) buff Landi in range — stay close.</li><li><b>Fortress is the anchor:</b> Nolan drops Fortress zones for his damage buff — Landi, whirlwind through the same pack he's standing in.</li><li><b>Both melee now:</b> stack on the same target; Nolan is the unkillable Resolve wall, Landi the mobile shredder.</li><li><b>Vulnerable:</b> at later Zeal variants Condemn returns (groups + Vulnerable). Until then Landi's own sources carry it.</li><li><b>Shared boss target:</b> Bloodied Butcher drops Ramaladni's (Landi) AND Red Sermon (Nolan) — every kill is a two-for-one lottery ticket.</li><li><b>Mercs:</b> both run Raheir (hired) + Aldkin (reinforcement) — that's fine, mercs are per-player.</li></ul>"
+    },
+    {
+      "id": "warplan-sync",
+      "title": "Syncing War Plans",
+      "html": "<p>Still the procedure whenever we re-plan:</p><ol><li>Both have War Plans unlocked (Skovos).</li><li>Be in an actual party.</li><li>Both stand in Temis at the board.</li><li>Pick <b>“New Plan For Party”</b> (only appears when partied).</li><li>Initiator pays 2 Marks of El'Druin; <b>the other player must accept the vote popup</b>.</li><li>Board resets and copies to both.</li></ol>"
+    },
+    {
+      "id": "endgame-plan",
+      "title": "Variant ladder — how we progress",
+      "html": "<ul><li><b>Landi (WW):</b> Legendary (now) → Uniques → Mythic → Selig. Legendary carries into Torment 2–3 with zero uniques.</li><li><b>Nolan (Zeal):</b> Starter (now, sword+board) → Endgame (Crown of Lucion + Red Sermon, goes 2H) → Mythic speedfarm.</li><li><b>The rule</b> (from the Zeal guide): finished all paragon points + gear card ticked → move to the next variant.</li><li>When either of you is ready to move up: send fresh Mobalytics screenshots of the next variant and the app gets updated — ticks for unchanged pieces carry over.</li></ul>"
     }
   ],
   "characters": [
@@ -65,88 +51,58 @@
       "build": "Whirlwind",
       "color": "#e05545",
       "links": {
-        "leveling": "https://mobalytics.gg/diablo-4/builds/barbarian-whirlwind-leveling-barb",
         "endgame": "https://mobalytics.gg/diablo-4/profile/cliptis/builds/pure-whirlwind"
       },
       "phases": [
         {
-          "id": "leveling",
-          "label": "Leveling 1–70",
-          "skills": [
-            { "id": "lunging", "text": "Lunging Strike", "rank": "1", "note": "Fury gen early · Dual-wield · upgrades: Fury Generation → Berserking → Skewer" },
-            { "id": "whirlwind", "text": "Whirlwind → Tornado at 15", "rank": "15", "note": "2H Mace · upgrades: Cost/Channel Damage Bonus → Tornado · main point dump to ~39" },
-            { "id": "leap", "text": "Leap", "rank": "15", "note": "Polearm · Pull → Fury Generation → Earthshatter early, RESPEC to Mosh around point 36" },
-            { "id": "warcry", "text": "War Cry", "rank": "15", "note": "Pop at full Fury before Whirlwinding · Ferocity → Duration → Mighty Roar · maxed last (points 68+)" },
-            { "id": "rallying", "text": "Rallying Cry", "rank": "15", "note": "Use out of combat, it costs Fury · Fortify → Potency → Booming · dump points 40–53" },
-            { "id": "ancients", "text": "Call of the Ancients", "rank": "4", "note": "Attack Speed/Damage Bonus → Empowered · dump points 54–67" }
-          ],
-          "gear": [
-            { "id": "helm", "slot": "Helm", "item": "Battle-Mad Aspect", "affixes": ["Strength", "Maximum Life", "Fury Regeneration"], "tempers": ["Defensive: Maximum Life (Worldly Endurance)"], "note": "Berserking source · Runes: Moni + Kel (Kel invokes Rally — Fury + move speed for 8s)" },
-            { "id": "chest", "slot": "Chest", "item": "Aspect of Accursed Touch", "affixes": ["Strength", "Maximum Life", "Fury Regeneration"], "tempers": ["Defensive: Maximum Life (Worldly Endurance)"], "note": "Runes: Cir + Gar (crit chance stacking)" },
-            { "id": "gloves", "slot": "Gloves", "item": "Steadfast Berserker's Aspect", "affixes": ["Strength", "Maximum Life", "Critical Strike Chance"], "tempers": ["Offensive: Critical Strike Damage (Worldly Finesse)"], "note": "Fortify" },
-            { "id": "pants", "slot": "Pants", "item": "Aspect of Heavenly Strength", "affixes": ["Strength", "Maximum Life", "Fury Regeneration", "Gems: 2× Ruby (150 Strength each)"], "tempers": ["Defensive: Maximum Life (Worldly Endurance)"], "note": "DR from 2H mace" },
-            { "id": "boots", "slot": "Boots", "item": "Aspect of Booming Voice", "affixes": ["Strength", "Movement Speed", "Fury Regeneration", "Attacks reduce Evade cooldown by 1.5s"], "tempers": ["Mobility: Movement Speed (Natural Motion)"], "note": "" },
-            { "id": "amulet", "slot": "Amulet", "item": "Heavy Hitting Aspect", "affixes": ["Strength", "Critical Strike Chance", "Movement Speed", "Gem: Diamond (625 All Resistance)"], "tempers": ["Resource: Resource Generation (Worldly Stability)"], "note": "WW damage w/ Tornado" },
-            { "id": "ring1", "slot": "Ring 1", "item": "Aspect of Furious Impulse", "affixes": ["Strength", "Maximum Life", "Critical Strike Chance", "Gem: Diamond (625 All Resistance)"], "tempers": ["Resource: Lucky Hit — restore Primary Resource (Worldly Stability)"], "note": "" },
-            { "id": "ring2", "slot": "Ring 2", "item": "Bold Chieftain's Aspect", "affixes": ["Strength", "Maximum Life", "Critical Strike Chance", "Gem: Diamond (625 All Resistance)"], "tempers": ["Resource: Resource Generation (Worldly Stability)"], "note": "" },
-            { "id": "mace", "slot": "Bludgeoning weapon (2H)", "item": "Aspect of Channeling", "affixes": ["Strength", "Maximum Life", "Critical Strike Damage Multiplier", "Gems: 2× Skull (×32% Physical Damage)"], "tempers": ["Weapon: Critical Strike Chance (Worldly Destruction)"], "note": "Drives Whirlwind" },
-            { "id": "dw1", "slot": "Dual-wield 1", "item": "Aspect of Limitless Rage", "affixes": ["Strength", "Maximum Life", "Critical Strike Damage Multiplier", "Gem: Skull (×32% Physical Damage)"], "tempers": ["Weapon: Critical Strike Chance (Worldly Destruction)"], "note": "" },
-            { "id": "dw2", "slot": "Dual-wield 2", "item": "Vehement Brawler's Aspect", "affixes": ["Strength", "Maximum Life", "Critical Strike Damage Multiplier", "Gem: Skull (×32% Physical Damage)"], "tempers": ["Weapon: Critical Strike Chance (Worldly Destruction)"], "note": "Call of the Ancients damage" },
-            { "id": "slash", "slot": "Slashing weapon (2H)", "item": "Crushing Aspect", "affixes": ["Strength", "Maximum Life", "Critical Strike Damage Multiplier", "Gems: 2× Skull (×32% Physical Damage)"], "tempers": ["Weapon: Critical Strike Chance (Worldly Destruction)"], "note": "Drives Leap" },
-            { "id": "seal", "slot": "Seal", "item": "Seal (priority 1)", "note": "Planner shows an unnamed Seal as top talisman priority" },
-            { "id": "charm1", "slot": "Charm", "item": "Fer of Practiced Technique", "note": "Talisman priority 2" },
-            { "id": "charm2", "slot": "Charm", "item": "Mlor of Practiced Technique", "note": "Talisman priority 3" },
-            { "id": "charm3", "slot": "Charm", "item": "Phoba of Practiced Technique", "note": "Talisman priority 4" },
-            { "id": "charm4", "slot": "Charm", "item": "Phoba of Mastery", "note": "Talisman priority 5" },
-            { "id": "charm5", "slot": "Charm", "item": "Fer of Mastery", "note": "Talisman priority 6" }
-          ],
-          "notes": [
-            "<b>Weapon assignment</b> (procs Battle-Mad / Berserking): 2H Mace → Whirlwind · Dual-wield → Lunging Strike · Polearm → Leap.",
-            "<b>Fury fixes:</b> Fury Regeneration (helm/chest/pants/boots), Lucky Hit: restore Primary Resource (gloves/weapons/jewelry tempers), Resource Cost Reduction backup. Enchant for Fury Regen / Lucky Hit restore / Fury on Kill.",
-            "<b>Mercenaries:</b> Subo (hired) · Varyana (reinforcement, Opportunity).",
-            "<b>Gearing order:</b> Movement Speed (boots/amulet/tempers) → Weapon DPS on the active-skill weapon (beats an aspect there) → Maximum Life everywhere → Resist/Armor once at Penitent."
-          ]
-        },
-        {
           "id": "endgame",
-          "label": "Endgame 70+",
-          "intro": "Ladder: Legendary variant (fresh 70) → Uniques → Mythic → Selig (final). Selig runs Melted Heart with ZERO Maximum Life anywhere — use the Mythic variant until that's fully set up or you will die.",
+          "label": "Endgame · Legendary variant",
+          "intro": "Current target: LEGENDARY variant — the level-70 starter, zero uniques, carries into Torment 2–3. Keeps Lunging Strike for Fury until later variants. Ladder: Legendary → Uniques → Mythic → Selig.",
           "skills": [
-            { "id": "whirlwind", "text": "Whirlwind (Tornado)", "note": "2H Mace arsenal" },
-            { "id": "rallying", "text": "Rallying Cry", "note": "Movement speed + Fury engine" },
-            { "id": "warcry", "text": "War Cry (Mighty Roar)", "note": "Damage multiplier" },
-            { "id": "challenging", "text": "Challenging Shout (Damage Bonus)", "note": "" },
-            { "id": "wrath", "text": "Wrath of the Berserker (Berserking / Full Throttle)", "note": "" },
-            { "id": "ironskin", "text": "Iron Skin", "note": "Swap to Leap (Arsenal Bonus + Crusher) if it kills you on Selig via Max Life" }
+            { "id": "whirlwind", "text": "Whirlwind (Tornado)", "rank": "15", "note": "Cost/Channel Damage Bonus → Tornado · 2H Mace arsenal" },
+            { "id": "lunging", "text": "Lunging Strike", "rank": "1", "note": "Fury Generation → Berserking → Skewer · kept until later variants fix Fury" },
+            { "id": "rallying", "text": "Rallying Cry", "rank": "15", "note": "Fortify → Potency → Booming · the movement-speed & Fury engine" },
+            { "id": "warcry", "text": "War Cry", "rank": "15", "note": "Ferocity → Duration Increase → Mighty Roar" },
+            { "id": "ironskin", "text": "Iron Skin", "rank": "15", "note": "Weaken → Juggernaut → Maximum Life · if it gets you killed on later Selig setup, swap to Leap (Arsenal Bonus + Crusher)" },
+            { "id": "ancients", "text": "Call of the Ancients", "rank": "4", "note": "Attack Speed & Damage Bonus → Damage Bonus → Highlander" }
           ],
           "gear": [
-            { "id": "helm", "slot": "Helm", "item": "Tuskhelm of Joritz the Mighty", "ladder": ["Wildbolt Aspect", "Tuskhelm of Joritz", "Tuskhelm of Joritz", "Tuskhelm of Joritz"], "source": "Bartuc (boss)", "note": "" },
-            { "id": "chest", "slot": "Chest", "item": "Aspect of Heavenly Strength", "ladder": ["Aspect of Coagulation", "Heavenly Strength", "Heavenly Strength", "Heavenly Strength"], "source": "Aspect — codex/imprint", "note": "Defense setup #1 uses Rage of Harrogath on chest instead" },
-            { "id": "gloves", "slot": "Gloves", "item": "Gohr's Devastating Grips", "ladder": ["Steadfast Berserker's Aspect", "Gohr's Grips", "Gohr's Grips", "Gohr's Grips"], "source": "Grigoire, The Galvanic Saint", "note": "" },
-            { "id": "pants", "slot": "Pants", "item": "Tibault's Will", "ladder": ["Aspect of Heavenly Strength", "Tibault's Will", "Tibault's Will", "Tibault's Will"], "source": "Shared unique pool (any boss)", "note": "" },
-            { "id": "boots", "slot": "Boots", "item": "Battle-Mad Aspect", "ladder": ["Battle-Mad Aspect", "Battle-Mad Aspect", "Battle-Mad Aspect", "Battle-Mad Aspect"], "source": "Aspect — codex/imprint", "note": "Berserking source all the way" },
-            { "id": "amulet", "slot": "Amulet", "item": "Melted Heart of Selig (final)", "ladder": ["Heavy Hitting Aspect", "Heavy Hitting Aspect", "Crushing Aspect", "Melted Heart of Selig"], "source": "Mythic — cube craft / Corrupted Reaper", "note": "Selig setup requires ZERO Max Life on gear, paragon (except 2 starter nodes), charms & seals + Endurant Faith charm" },
-            { "id": "ring1", "slot": "Ring 1", "item": "Heavy Hitting Aspect (final)", "ladder": ["Aspect of Limitless Rage", "Limitless Rage", "Heavy Hitting Aspect", "Heavy Hitting Aspect"], "source": "Aspect — codex/imprint", "note": "" },
-            { "id": "ring2", "slot": "Ring 2", "item": "Ring of Starless Skies", "ladder": ["Bold Chieftain's Aspect", "Bold Chieftain's", "Ring of Starless Skies", "Ring of Starless Skies"], "source": "Mythic — cube craft / Corrupted Reaper", "note": "" },
-            { "id": "mace", "slot": "Bludgeoning weapon", "item": "Aspect of Channeling (final)", "ladder": ["Crushing Aspect", "Crushing Aspect", "Aspect of Channeling", "Aspect of Channeling"], "source": "Aspect — codex/imprint", "note": "Arsenal: 2H Mace drives Whirlwind" },
-            { "id": "dw1", "slot": "Dual-wield 1", "item": "Crushing Aspect (final)", "ladder": ["Edgemaster's Aspect", "Edgemaster's", "Edgemaster's", "Crushing Aspect"], "source": "Aspect — codex/imprint", "note": "" },
-            { "id": "dw2", "slot": "Dual-wield 2", "item": "Ramaladni's Magnum Opus", "ladder": ["Vehement Brawler's Aspect", "Ramaladni's Magnum Opus", "Ramaladni's", "Ramaladni's"], "source": "Bloodied Butcher (boss)", "note": "" },
-            { "id": "slash", "slot": "Slashing weapon", "item": "The Grandfather", "ladder": ["Aspect of Channeling", "Channeling", "The Grandfather", "The Grandfather"], "source": "Mythic — cube craft / Corrupted Reaper", "note": "" },
-            { "id": "charms", "slot": "Charms / Seals", "item": "Ranks to Core/Martial ×2 · Max Resources ×3", "ladder": ["Any charms", "Affix hunt", "Right affixes", "Perfected + Endurant Faith for Selig"], "source": "—", "note": "Seals: any +Damage(x) is best. Endurant Faith charm is REQUIRED for the Selig variant" }
+            { "id": "gloves", "slot": "Gloves · priority 1", "item": "Steadfast Berserker's Aspect", "affixes": ["Strength", "Maximum Life", "Critical Strike Chance", "Cooldown Reduction ★key"], "tempers": ["Cooldown Reduction", "Offensive: Critical Strike Damage (Worldly Finesse)"], "ladder": ["Steadfast Berserker's", "Gohr's Grips", "Gohr's Grips", "Gohr's Grips"], "source": "Later: Gohr's — Grigoire", "note": "" },
+            { "id": "dw2", "slot": "Dual-wield 2 · priority 2", "item": "Vehement Brawler's Aspect", "affixes": ["Strength", "Maximum Life", "Critical Strike Damage Multiplier ★key", "Physical Damage Multiplier", "Gem: Skull (×32% Physical)"], "tempers": ["Critical Strike Damage Multiplier", "Weapon: Critical Strike Chance (Worldly Destruction)"], "ladder": ["Vehement Brawler's", "Ramaladni's Magnum Opus", "Ramaladni's", "Ramaladni's"], "source": "Later: Ramaladni's — Bloodied Butcher", "note": "" },
+            { "id": "slash", "slot": "Slashing (Polearm) · priority 3", "item": "Aspect of Channeling", "affixes": ["Strength", "Maximum Life", "Critical Strike Damage Multiplier ★key", "Physical Damage Multiplier", "Gems: 2× Skull (×32% Physical)"], "tempers": ["Critical Strike Damage Multiplier", "Weapon: Critical Strike Chance (Worldly Destruction)"], "ladder": ["Channeling", "Channeling", "The Grandfather", "The Grandfather"], "source": "Later: Grandfather — Mythic craft / Corrupted Reaper", "note": "Slot set to Polearm (also the Expertise technique)" },
+            { "id": "helm", "slot": "Helm · priority 4", "item": "Wildbolt Aspect", "affixes": ["Strength", "Maximum Life", "Armor", "Fury Regeneration ★key", "Rune: Cir (cast 5 skills → exhausted 3s)", "Rune: Kel (invokes Rally — resource + move speed 8s)"], "tempers": ["Fury Regeneration", "Defensive: Maximum Life (Worldly Endurance)"], "ladder": ["Wildbolt", "Tuskhelm of Joritz", "Tuskhelm", "Tuskhelm"], "source": "Later: Tuskhelm — Bartuc", "note": "" },
+            { "id": "ring2", "slot": "Ring 2 · priority 5", "item": "Bold Chieftain's Aspect", "affixes": ["Strength", "Maximum Life", "Critical Strike Chance ★key", "Cooldown Reduction", "Gem: Diamond (625 All Res)"], "tempers": ["Critical Strike Chance", "Resource: Resource Generation (Worldly Stability)"], "ladder": ["Bold Chieftain's", "Bold Chieftain's", "Ring of Starless Skies", "Starless Skies"], "source": "Later: Starless Skies — Mythic craft / Corrupted Reaper", "note": "" },
+            { "id": "pants", "slot": "Pants · priority 6", "item": "Aspect of Heavenly Strength", "affixes": ["Strength", "Maximum Life", "Armor", "Fury Regeneration ★key", "Gems: 2× Ruby (150 Strength)"], "tempers": ["Fury Regeneration", "Defensive: Maximum Life (Worldly Endurance)"], "ladder": ["Heavenly Strength", "Tibault's Will", "Tibault's", "Tibault's"], "source": "Later: Tibault's Will — shared pool", "note": "" },
+            { "id": "chest", "slot": "Chest · priority 7", "item": "Aspect of Coagulation", "affixes": ["Strength", "Maximum Life", "Ranks to Rallying Cry ★key", "Fury Regeneration", "Rune: Zan (cast an Ultimate)", "Rune: Que (Earthen Bulwark barrier)"], "tempers": ["Ranks to Rallying Cry", "Defensive: Maximum Life (Worldly Endurance)"], "ladder": ["Coagulation", "Heavenly Strength", "Heavenly Strength", "Heavenly Strength"], "source": "", "note": "Zan + Que = barrier every Ultimate cast" },
+            { "id": "mace", "slot": "Bludgeoning (2H Mace) · priority 8", "item": "Crushing Aspect", "affixes": ["Strength", "Maximum Life", "Critical Strike Damage Multiplier ★key", "Physical Damage Multiplier", "Gems: 2× Skull (×32% Physical)"], "tempers": ["Critical Strike Damage Multiplier", "Weapon: Critical Strike Chance (Worldly Destruction)"], "ladder": ["Crushing", "Crushing", "Channeling", "Channeling"], "source": "", "note": "Arsenal selection: 2H Mace drives Whirlwind" },
+            { "id": "amulet", "slot": "Amulet · priority 9", "item": "Heavy Hitting Aspect", "affixes": ["Strength", "Movement Speed", "Critical Strike Chance ★key", "All Damage Multiplier", "Gem: Diamond (625 All Res)"], "tempers": ["Critical Strike Chance", "Resource: Cooldown Reduction (Worldly Stability)"], "ladder": ["Heavy Hitting", "Heavy Hitting", "Crushing", "Melted Heart of Selig"], "source": "Final: Melted Heart — Mythic craft / Corrupted Reaper", "note": "Planner also lists 'Aspect of Anger Management' on this card — verify what that means on the build page" },
+            { "id": "dw1", "slot": "Dual-wield 1 · priority 10", "item": "Edgemaster's Aspect", "affixes": ["Strength", "Maximum Life", "Critical Strike Damage Multiplier ★key", "Physical Damage Multiplier", "Gem: Skull (×32% Physical)"], "tempers": ["Critical Strike Damage Multiplier", "Weapon: Critical Strike Chance (Worldly Destruction)"], "ladder": ["Edgemaster's", "Edgemaster's", "Edgemaster's", "Crushing"], "source": "", "note": "" },
+            { "id": "ring1", "slot": "Ring 1 · priority 11", "item": "Aspect of Limitless Rage", "affixes": ["Strength", "Maximum Life", "Critical Strike Chance ★key", "Cooldown Reduction", "Gem: Diamond (625 All Res)"], "tempers": ["Critical Strike Chance", "Resource: Lucky Hit — restore Primary Resource (Worldly Stability)"], "ladder": ["Limitless Rage", "Limitless Rage", "Heavy Hitting", "Heavy Hitting"], "source": "", "note": "" },
+            { "id": "boots", "slot": "Boots · priority 12", "item": "Battle-Mad Aspect", "affixes": ["Strength", "Maximum Life", "Ranks to War Cry ★key", "Movement Speed"], "tempers": ["Ranks to War Cry", "Mobility: Movement Speed"], "ladder": ["Battle-Mad", "Battle-Mad", "Battle-Mad", "Battle-Mad"], "source": "", "note": "Berserking source in every variant" },
+            { "id": "seal", "slot": "Seal", "item": "Seal — any +Damage(x)", "affixes": ["Critical Strike Damage"], "note": "" },
+            { "id": "charm1", "slot": "Charm", "item": "Berú of Sescheron's Fury", "affixes": ["Ranks to Martial Skills"], "note": "" },
+            { "id": "charm2", "slot": "Charm", "item": "Fer of Sescheron's Fury", "affixes": ["Ranks to Martial Skills"], "note": "" },
+            { "id": "charm3", "slot": "Charm", "item": "Linta of Sescheron's Fury", "affixes": ["Ranks to Martial Skills"], "note": "" },
+            { "id": "charm4", "slot": "Charm", "item": "Mlor of Sescheron's Fury", "affixes": ["Maximum Resource"], "note": "" },
+            { "id": "charm5", "slot": "Charm", "item": "Phoba of Sescheron's Fury", "affixes": ["Maximum Resource"], "note": "Planner's 7th talisman line reads 'Tuskhelm of Joritz' — looks like a planner glitch, verify on the build page" }
           ],
           "paragon": [
-            { "id": "boards", "text": "Follow the paragon tab on the Mobalytics endgame build (board order per variant)" },
-            { "id": "glyph1", "text": "First glyph socketed" },
-            { "id": "glyph15", "text": "Main glyphs to level 15" },
-            { "id": "glyph46", "text": "Main glyphs to level 46 (Legendary glyph upgrades)" },
-            { "id": "allboards", "text": "All boards attached & rotated per planner" },
-            { "id": "selignolife", "text": "Selig prep: remove ALL Max Life paragon nodes (keep only 2 starter nodes)" }
+            { "id": "b1", "text": "Board 1: Starter Board — socket Challenger" },
+            { "id": "b2", "text": "Board 2: Warbringer — socket Wrath (+ legendary node)" },
+            { "id": "b3", "text": "Board 3: Blood Rage — socket Twister (+ legendary node)" },
+            { "id": "b4", "text": "Board 4: Carnage — socket Marshal (+ legendary node)" },
+            { "id": "b5", "text": "Board 5: Flawless Technique — socket Exploit" },
+            { "id": "glyph15", "text": "Glyphs to 15 — level order: Wrath → Twister → Marshal → Challenger → Exploit" },
+            { "id": "glyph46", "text": "Glyphs to 46 (Legendary upgrades), same order" },
+            { "id": "allpoints", "text": "All paragon points spent → ready for the Uniques variant" }
           ],
           "notes": [
-            "<b>Defense setup #1 (most tanky):</b> Heavenly Strength on amulet · Rage of Harrogath chest · Berserk Ripping ring · Full Throttle WotB · Coagulation pants. <b>#2 (more damage):</b> Heavenly Strength pants · Harrogath chest · Heavy Hitting amulet · Walloping ring (pit) / Berserk Ripping (farm).",
-            "<b>Fury:</b> Resource Generation affixes pair with Rallying Cry · Fury Regen on helm/chest/pants/boots · don't spam WW away from monsters.",
-            "<b>Expertise:</b> Technique = Polearm (Lucky Hit + healthy damage) while Arsenal = 2H Mace — you get both bonuses.",
-            "<b>Mercenaries:</b> Raheir (hired) · Aldkin (reinforcement: Opportunity)."
+            "<b>Damage engine:</b> Rallying Cry = movement speed + Fury; damage stacks from Mighty Roar War Cry (+ Challenging Shout / Berserking Wrath of the Berserker in later variants).",
+            "<b>Arsenal & Expertise:</b> arsenal = 2H Mace (Fury on hit, doubled while Berserking, crit damage); Expertise technique = Polearm (Lucky Hit + damage while healthy) — you get both bonuses.",
+            "<b>Fury:</b> Resource Generation pairs with Rallying Cry · Fury Regen on helm/chest/pants/boots · don't spam WW away from monsters · no Starless Skies yet? add Resource Cost Reduction on the 2H weapons to mimic it.",
+            "<b>Defense setup #1 (most tanky):</b> Heavenly Strength on amulet · Rage of Harrogath chest · Berserk Ripping ring · Full Throttle WotB · Coagulation pants. <b>#2 (more damage):</b> Heavenly Strength pants · Harrogath chest · Heavy Hitting amulet · Walloping (pit) / Berserk Ripping (farm) ring.",
+            "<b>Aspect interactions:</b> Earthstriker's procs off Overpower buff without weapon swap · Weapon Master + Battle-Mad also need no swap.",
+            "<b>Mercenaries:</b> Raheir (hired) · Aldkin (reinforcement, Opportunity)."
           ]
         }
       ]
@@ -155,88 +111,63 @@
       "id": "p2",
       "name": "Nolan",
       "klass": "Paladin",
-      "build": "Wing Strikes (Arbiter)",
+      "build": "Zeal",
       "color": "#e0b84f",
       "links": {
-        "leveling": "https://mobalytics.gg/diablo-4/builds/wing-strikes-paladin-leveling",
-        "endgame": "https://mobalytics.gg/diablo-4/builds/wing-strikes-paladin"
+        "endgame": "https://mobalytics.gg/diablo-4/builds/zeal-paladin-m1py"
       },
       "phases": [
         {
-          "id": "leveling",
-          "label": "Leveling 1–70",
-          "skills": [
-            { "id": "fallingstar", "text": "Falling Star", "note": "Ascend into Arbiter on cooldown · upgrades: Vulnerable → Cooldown Reduction → Starfall (late) · heavy point dump 70+" },
-            { "id": "advance", "text": "Advance → Flash of the Blade", "note": "Unhindered → Crit Chance · add Flash of the Blade late (~point 67): it makes Advance a Disciple skill (ascends you) but adds a cooldown — before 15, spam plain Advance" },
-            { "id": "condemn", "text": "Condemn", "note": "Groups monsters + Vulnerable · also ascends you via Disciple · Gather the Guilty → Cooldown Reduction (points 47–49)" },
-            { "id": "fanaticism", "text": "Fanaticism Aura", "note": "Party offense buff · Resource Generation + Extra Passive Stack · big dump points 24–35" },
-            { "id": "defiance", "text": "Defiance Aura", "note": "Party defense buff · Maximum Life → Bonus Healing · dump points 36–46" },
-            { "id": "consecration", "text": "Consecration", "note": "Damage + heal · Hallowed Ground → Resource Generation → Duration · dump points 50–63" },
-            { "id": "disciple", "text": "Disciple Oath", "note": "Arbiter Form source (level 15 spec quest)" },
-            { "id": "passives", "text": "Passives: Rite of Vengeance · Rite of Prayer · Seraphs' Wings", "note": "Picked up early (points 9, 13, 19)" }
-          ],
-          "gear": [
-            { "id": "helm", "slot": "Helm", "item": "Aspect of the Disciple", "affixes": ["Strength", "Maximum Life", "Armor", "Resistance to All Elements"], "tempers": ["Utility: Arbiter Duration (Aura Innovation)"], "note": "Runes: Cir + Gar · CHANGED from Firm Decree (build updated 2 Jul)" },
-            { "id": "chest", "slot": "Chest", "item": "Aspect of Angelic Masterwork", "affixes": ["Strength", "Maximum Life", "Armor", "Ranks to Aura Skills", "Gems: 2× Ruby (150 Strength each)"], "tempers": ["Utility: Arbiter Duration"], "note": "CHANGED from Hale's Salve (build updated 2 Jul)" },
-            { "id": "gloves", "slot": "Gloves", "item": "Aspect of Holy Punishment", "affixes": ["Strength", "Maximum Life", "Armor", "Critical Strike Chance"], "tempers": ["Utility: Arbiter Duration (Aura Innovation)"], "note": "CHANGED from Tyrael's Jurisdiction — that aspect goes on the weapon (build updated 2 Jul)" },
-            { "id": "pants", "slot": "Pants", "item": "Aspect of Heavenly Strength", "affixes": ["Strength", "Maximum Life", "Armor", "Resistance to All Elements"], "tempers": ["Defensive: Maximum Life (Worldly Endurance)"], "note": "Runes: Cem + Qua (stacking move speed) · CHANGED from Indomitable (build updated 2 Jul)" },
-            { "id": "boots", "slot": "Boots", "item": "Aspect of Unstoppable Force", "affixes": ["Strength", "Maximum Life", "Armor", "Movement Speed", "Evade grants +125% Move Speed for 1.5s"], "tempers": ["Mobility: Movement Speed (Natural Motion)"], "note": "" },
-            { "id": "amulet", "slot": "Amulet", "item": "Aspect of Celestial Strife", "affixes": ["Strength", "Critical Strike Chance", "Cooldown Reduction", "Maximum Life", "Gem: Diamond (625 All Resistance)"], "tempers": ["Utility: Arbiter Duration (Aura Innovation)"], "note": "Chase: Sanctis of Kethamar — if found early, equip it and move Celestial Strife to the ring (replacing Utmost Glory)" },
-            { "id": "ring1", "slot": "Ring 1", "item": "Aspect of Ascension", "affixes": ["Strength", "Maximum Life", "Critical Strike Chance", "Cooldown Reduction", "Gem: Diamond (625 All Resistance)"], "tempers": ["Offensive: Disciple Damage (Guardian Finesse)"], "note": "" },
-            { "id": "ring2", "slot": "Ring 2", "item": "Aspect of Utmost Glory", "affixes": ["Strength", "Maximum Life", "Critical Strike Chance", "Vulnerable Damage Multiplier", "Gem: Diamond (625 All Resistance)"], "tempers": ["Offensive: Wing Strike Damage (Guardian Finesse)"], "note": "" },
-            { "id": "weapon", "slot": "Weapon (2H)", "item": "Aspect of Tyrael's Jurisdiction", "affixes": ["Strength", "Maximum Life", "Life On Hit", "Weapon Damage", "Gem: Ruby (×32% Fire & Holy Damage)"], "tempers": ["Offensive: Wing Strike Damage (Guardian Finesse)"], "note": "" },
-            { "id": "charm1", "slot": "Charm", "item": "Phoba of Lethality", "note": "Talisman priority 1 (charm slot 6)" },
-            { "id": "charm2", "slot": "Charm", "item": "Mlor of Lethality", "note": "Talisman priority 2 (charm slot 2)" },
-            { "id": "charm3", "slot": "Charm", "item": "Fer of Lethality", "note": "Talisman priority 3 (charm slot 1)" }
-          ],
-          "notes": [
-            "<b>Core:</b> stay in Arbiter Form (Disciple Oath, level 15) so Wing Strikes auto-hit while gliding. Before 15: plain Advance.",
-            "<b>Rotation:</b> 1) Falling Star on cooldown to ascend · 2) Condemn to group + Vulnerable (also ascends) · 3) Fanaticism + Defiance for buffs · 4) Advance + Flash of the Blade for mobility/uptime · 5) Consecration for damage + heal.",
-            "<b>Resplendence Glyph:</b> once you have it, casting either Aura also reduces your non-Aura cooldowns by 2 seconds.",
-            "<b>Skill rank priority:</b> Arbiter of Justice → Fanaticism Aura → Defiance Aura → Consecration → Advance.",
-            "<b>Temper:</b> Arbiter Duration ASAP, plus HP.",
-            "<b>Mercenaries:</b> Varyana (hired) · Raheir (reinforcement, Opportunity). Note: the ENDGAME build flips to Raheir hired + Aldkin."
-          ]
-        },
-        {
           "id": "endgame",
-          "label": "Endgame 70+",
-          "intro": "Ladder: Starter (all aspects, no uniques) → Endgame (Crown of Lucion + Sanctis) → Speed/Push (Mythic Fists of Fate + Ghostwalker). ⚠ Berú of Light's Epiphany is currently bugged (build works, just weaker) — check the build page for updates.",
+          "label": "Endgame · Starter variant",
+          "intro": "NEW BUILD: Zeal (Zealot Oath) — stacks Fervor for huge hits, heals to full via Embattled Aspect + Zealot Fortify. STARTER variant: all aspects, no uniques, 1H Sword + Shield. Ladder: Starter → Endgame (Crown of Lucion + Red Sermon, goes 2H) → Mythic speedfarm. Berú of Dauntless Faith talisman set = ×425% damage + auto-casts Rally every 6s.",
           "skills": [
-            { "id": "arbiter", "text": "Arbiter of Justice", "note": "Cast to trigger Berú's [x]500% + Fortress" },
-            { "id": "condemn", "text": "Condemn", "note": "+30% MS over cap · groups + Vulnerable · lowers Arbiter CD" },
-            { "id": "fanaticism", "text": "Fanaticism Aura", "note": "On cooldown — stacks Crown of Lucion (needs ≤6s CD)" },
-            { "id": "defiance", "text": "Defiance Aura", "note": "Party defense" },
-            { "id": "aegis", "text": "Aegis", "note": "On cooldown — 30% Armor + Block (caps Redirected Force), Resolve for Glynn's Anvil" },
-            { "id": "consecration", "text": "Consecration", "note": "" },
-            { "id": "disciple", "text": "Disciple Oath", "note": "" },
-            { "id": "rally", "text": "Rally (Speed variant)", "note": "+20% MS over cap" }
+            { "id": "zeal", "text": "Zeal", "rank": "15", "note": "Core · Additional Strikes → later passives Weaken Zeal + Death or Glory (free from Red Sermon at Endgame variant)" },
+            { "id": "fortress", "text": "Fortress", "rank": "15", "note": "Unstoppable → Resolve Damage Bonus · re-cast to move it · bossing: swap Barricade→Rampart of Thorns (don't recast before old one expires — bugs out)" },
+            { "id": "fanaticism", "text": "Fanaticism Aura", "rank": "15", "note": "Extra Passive Stack · cast on cooldown (Resplendence lowers other CDs; sustains Crown of Lucion later)" },
+            { "id": "defiance", "text": "Defiance Aura", "rank": "15", "note": "Bonus Healing → Maximum Life · cast on cooldown, stagger with Fanaticism" },
+            { "id": "aegis", "text": "Aegis", "rank": "5", "note": "Cooldown Reduction → Duration · caps Block Chance until Interdiction aspect is maxed" },
+            { "id": "barricade", "text": "Barricade", "rank": "1", "note": "Swap to Rampart of Thorns for bossing" },
+            { "id": "rally", "text": "Rally (not on bar)", "note": "Berú auto-casts it every 6s · with Words of Sacrifice, manually stack to 3 = 60% move speed + 15% crit" },
+            { "id": "passives", "text": "Passives: Rite of Vengeance · Rite of Might · Stay Resolute · Words of Sacrifice · Weaken Zeal · Death or Glory", "note": "Oath: ZEALOT" }
           ],
           "gear": [
-            { "id": "helm", "slot": "Helm", "item": "Crown of Lucion", "ladder": ["Aspect of Glynn's Anvil", "Crown of Lucion", "Crown of Lucion (Mythic = x58.5%)", "Crown of Lucion Mythic"], "source": "Shared unique pool (any boss)", "note": "Needs 10 Faith Regen + ≤6s Fanaticism CD to sustain stacks" },
-            { "id": "chest", "slot": "Chest", "item": "Aspect of the Indomitable", "ladder": ["Indomitable", "Indomitable", "Indomitable", "Indomitable"], "source": "Aspect — codex/imprint", "note": "" },
-            { "id": "gloves", "slot": "Gloves", "item": "Fists of Fate (Mythic only)", "ladder": ["Crushing Aspect", "Aspect of Ascension", "Aspect of Ascension", "Fists of Fate — ONLY if Mythic"], "source": "Shared pool · Mythic via cube craft", "note": "" },
-            { "id": "pants", "slot": "Pants", "item": "Aspect of Heavenly Strength", "ladder": ["Heavenly Strength", "Heavenly Strength", "Heavenly Strength", "Heavenly Strength"], "source": "Aspect — codex/imprint", "note": "" },
-            { "id": "boots", "slot": "Boots", "item": "Ghostwalker Aspect (Speed)", "ladder": ["Aspect of Interdiction", "Interdiction", "Interdiction", "Ghostwalker (Speed)"], "source": "Aspect — codex/imprint", "note": "Interdiction moves to amulet transfigure at Speed tier" },
-            { "id": "amulet", "slot": "Amulet", "item": "Sanctis of Kethamar", "ladder": ["Aspect of Redirected Force", "Sanctis of Kethamar", "Sanctis of Kethamar", "Sanctis of Kethamar"], "source": "The Beast in the Ice", "note": "Transfigure Aspect of Interdiction on amulet → enables Redirected Force + caps Block" },
-            { "id": "ring1", "slot": "Ring 1", "item": "Aspect of Redirected Force", "ladder": ["Aspect of Celestial Strife", "Redirected Force", "Redirected Force", "Redirected Force"], "source": "Aspect — codex/imprint", "note": "" },
-            { "id": "ring2", "slot": "Ring 2", "item": "Aspect of Celestial Strife", "ladder": ["Aspect of Ascension", "Celestial Strife", "Celestial Strife", "Celestial Strife"], "source": "Aspect — codex/imprint", "note": "" },
-            { "id": "weapon", "slot": "Weapon", "item": "Aspect of Tyrael's Jurisdiction", "ladder": ["Tyrael's Jurisdiction", "Tyrael's Jurisdiction", "Tyrael's Jurisdiction", "Tyrael's Jurisdiction"], "source": "Aspect — codex/imprint", "note": "2H Mace or Axe — slowest possible (Wing Strikes don't scale with attack speed)" },
-            { "id": "charms", "slot": "Charms", "item": "Blood-Mad Idol · Griswold's Opus · Endurant Faith", "ladder": ["Any charms", "Endurant Faith (defense)", "Griswold's Opus", "Blood-Mad Idol (max dmg + MS)"], "source": "Blood-Mad: shared pool · Griswold's: Astaroth · Endurant: shared pool", "note": "Talisman set: Berú of Light's Epiphany (currently bugged). Charm affixes: All Stats > Max Life > Lightning/Fire/Poison/Phys Res" }
+            { "id": "ring2", "slot": "Ring 2 · priority 1", "item": "The Penitent's Aspect", "affixes": ["Critical Strike Damage Multiplier ★GA", "Attack Speed", "Vulnerable Damage Multiplier", "Cooldown Reduction", "Gem: Diamond (625 All Res)"], "tempers": ["Offensive: Critical Strike Damage (Worldly Finesse)"], "masterwork": "Physical Damage", "ladder": ["Penitent's", "Penitent's", "Penitent's"], "source": "", "note": "" },
+            { "id": "gloves", "slot": "Gloves · priority 2", "item": "Aspect of Utmost Glory", "affixes": ["Critical Strike Damage Multiplier ★GA", "Vulnerable Damage Multiplier", "Maximum Life", "Physical Damage Multiplier"], "tempers": ["Offensive: Critical Strike Damage (Worldly Finesse)"], "masterwork": "Item Quality", "ladder": ["Utmost Glory", "Utmost Glory", "Fists of Fate (Mythic)"], "source": "Final: Fists of Fate — Mythic craft", "note": "" },
+            { "id": "pants", "slot": "Pants · priority 3", "item": "Aspect of Glynn's Anvil", "affixes": ["Strength", "Maximum Life", "Armor", "Resistance to All Elements", "Gems: 2× Ruby (150 Strength)"], "tempers": ["Defensive: Maximum Resolve Stacks (Worldly Endurance)"], "masterwork": "Physical Damage", "ladder": ["Glynn's Anvil", "Glynn's Anvil", "Glynn's Anvil"], "source": "", "note": "Resolve stacks scale Glynn's Anvil — 20 Max Resolve = 100% Block" },
+            { "id": "ring1", "slot": "Ring 1 · priority 4", "item": "Revelator's Aspect", "affixes": ["Critical Strike Damage Multiplier", "Vulnerable Damage Multiplier ★GA", "Cooldown Reduction", "Maximum Life", "Gem: Ruby (4375 Fire Res)"], "tempers": ["Offensive: Critical Strike Damage (Worldly Finesse)"], "masterwork": "Physical Damage", "ladder": ["Revelator's", "Zealot's Covenant", "Zealot's Covenant"], "source": "", "note": "" },
+            { "id": "boots", "slot": "Boots · priority 5", "item": "Aspect of Interdiction", "affixes": ["Strength", "Maximum Life", "Armor", "Movement Speed"], "tempers": ["Mobility: Movement Speed (Natural Motion)"], "masterwork": "Physical Damage", "ladder": ["Interdiction", "Embattled", "Interdiction"], "source": "", "note": "Interdiction caps Block; Aegis fills the gap until it's maxed" },
+            { "id": "helm", "slot": "Helm · priority 6", "item": "Embattled Aspect", "affixes": ["Cooldown Reduction", "Strength", "Maximum Life ★GA", "Armor", "Rune: Cir (cast 5 skills → exhausted 3s)", "Rune: Kry (Vortex — pulls enemies in)"], "tempers": ["Defensive: Maximum Resolve Stacks (Worldly Endurance)"], "ladder": ["Embattled", "Crown of Lucion", "Crown of Lucion"], "source": "Later: Crown of Lucion — shared pool", "note": "Embattled = the full-heal engine with Zealot Oath. Cir + Kry pulls packs together" },
+            { "id": "amulet", "slot": "Amulet · priority 7", "item": "Aspect of Redirected Force", "affixes": ["Critical Strike Damage Multiplier ★GA", "Vulnerable Damage Multiplier", "Physical Damage Multiplier", "Maximum Life", "Gem: Topaz (4375 Lightning Res)"], "tempers": ["Defensive: Maximum Life (Worldly Endurance)"], "masterwork": "Item Quality", "ladder": ["Redirected Force", "Redirected Force", "Redirected Force"], "source": "", "note": "At later variants: transfigure Embattled Aspect here (mandatory to heal)" },
+            { "id": "weapon", "slot": "Weapon (1H Sword) · priority 8", "item": "Aspect of the Zealot's Covenant", "affixes": ["Critical Strike Damage Multiplier ★GA", "Maximum Life", "Strength", "Physical Damage Multiplier", "Gems: 2× Skull (×32% Physical)"], "tempers": ["Weapon: Critical Strike Chance (Worldly Destruction)"], "ladder": ["Zealot's Covenant (1H)", "Red Sermon (2H)", "Red Sermon"], "source": "Later: Red Sermon — Bloodied Butcher", "note": "" },
+            { "id": "offhand", "slot": "Offhand (Shield) · priority 9", "item": "Crushing Aspect", "affixes": ["Strength", "Critical Strike Chance", "Maximum Life", "Damage Reduction ★GA", "Gem: Ruby (150 Strength)"], "tempers": ["Defensive: Maximum Life (Worldly Endurance)"], "ladder": ["Crushing (shield)", "— (2H at Endgame)", "—"], "source": "", "note": "Shield goes away once Red Sermon arrives" },
+            { "id": "chest", "slot": "Chest · priority 10", "item": "Aspect of Accursed Touch", "affixes": ["Strength", "Maximum Life ★GA", "Ranks to Fanaticism Aura", "Armor", "Rune: Igni (stores offering — swap: Tam > Yul > Bac)", "Rune: Mot (Dark Shroud damage reduction)"], "tempers": ["Defensive: Maximum Resolve Stacks (Worldly Endurance)"], "masterwork": "Physical Damage", "ladder": ["Accursed Touch", "Heavenly Strength", "Heavenly Strength"], "source": "", "note": "Igni + Mot = Dark Shroud DR" },
+            { "id": "charm1", "slot": "Charm", "item": "Berú of Dauntless Faith", "affixes": ["Ranks to Zealot Skills"], "note": "THE talisman set piece — ×425% damage, 10% cast speed, Afterimages + free Rally" },
+            { "id": "charm2", "slot": "Charm", "item": "Fer of Dauntless Faith", "affixes": ["Ranks to Zealot Skills"], "note": "" },
+            { "id": "charm3", "slot": "Charm", "item": "Linta of Dauntless Faith", "affixes": ["Ranks to Zealot Skills"], "note": "" },
+            { "id": "charm4", "slot": "Charm", "item": "Mlor of Dauntless Faith", "affixes": ["Ranks to Zealot Skills"], "note": "" },
+            { "id": "charm5", "slot": "Charm", "item": "Phoba of Dauntless Faith", "affixes": ["Ranks to Zealot Skills"], "note": "" },
+            { "id": "charm6", "slot": "Charm", "item": "Griswold's Opus", "affixes": ["All Stats"], "note": "Later swap: Blood-Mad Idol (more damage + MS, squishier). Charm affix priority: Zealot Ranks > All Stats > Aura Skills > Max Life > resists. Seal: +1 Charm > Crit Dmg > All Dmg" }
           ],
           "paragon": [
-            { "id": "boards", "text": "Follow the paragon tab on the Mobalytics endgame build (per variant)" },
-            { "id": "sentinel", "text": "Sentinel glyph socketed (added Patch 3.0.2)" },
-            { "id": "glyph15", "text": "Main glyphs to level 15" },
-            { "id": "glyph46", "text": "Main glyphs to level 46 (Legendary upgrades)" },
-            { "id": "allboards", "text": "All boards attached & rotated per planner" }
+            { "id": "b1", "text": "Board 1: Starter Board — socket Resplendence" },
+            { "id": "b2", "text": "Board 2: Relentless (+ legendary node)" },
+            { "id": "b3", "text": "Board 3: Fervent (+ legendary node)" },
+            { "id": "b4", "text": "Board 4: Castle (+ legendary node)" },
+            { "id": "b5", "text": "Board 5: Preacher" },
+            { "id": "glyphs", "text": "Socket remaining glyphs — priority: Spirit → Resplendence → Feverous → Outmatch → Chip (board-to-glyph mapping: verify on planner)" },
+            { "id": "nodeprio", "text": "Node priority: Legendary Nodes → Glyph Activation → Max Life → Maxing Glyphs → Damage rares → Armor rares → Res rares" },
+            { "id": "glyph15", "text": "Glyphs to 15, then 46 (same priority order)" },
+            { "id": "allpoints", "text": "All paragon points spent → move to the Endgame variant" }
           ],
           "notes": [
-            "<b>Offensive affix priority:</b> Crit Strike Damage Multi → Vulnerable Damage Multi → Crit Chance → Holy/All Damage → Weapon Damage/Strength.",
-            "<b>Resolve:</b> 13 Max Resolve stacks needed to max Glynn's Anvil (Starter).",
-            "<b>Block with 2H:</b> yes — blocks less, but enables Redirected Force; Interdiction (transfigured) caps Block.",
-            "<b>Faith:</b> nothing needed until Crown of Lucion, then ~10 Faith Regeneration.",
-            "<b>Mercenaries:</b> Raheir (hired) · Aldkin (reinforcement: Opportunity)."
+            "<b>Rotation:</b> 1) Fortress for the Resolve damage buff (re-cast to reposition) · 2) Aegis to cap Block · 3) Fanaticism + Defiance on cooldown (Resplendence trims other CDs — keeps Fortress up) · 4) Rally to 3 stacks · Embattled + Zealot Oath = instant full heal.",
+            "<b>How the damage works:</b> Zeal stacks Fervor; at the Endgame variant Red Sermon grants Death or Glory free (huge damage, costs 10% Max Life per cast — the Embattled/Fortify loop pays for it).",
+            "<b>Crown of Lucion prep (next variant):</b> needs 1 Faith Regen affix + Fanaticism CD ≤6s; auras are bugged near the 6s mark — stagger or spam them.",
+            "<b>Auto-cast trick:</b> Rally/auras can auto-cast via the Numlock trick (bind to numpad, hold, toggle Numlock, release) — PC only; on Xbox just keep casting on cooldown.",
+            "<b>Resolve:</b> Fortress generates tons; 20 Max Resolve = 100% Block; stack Max Resolve tempers (armor slots).",
+            "<b>Attack speed breakpoints:</b> exist (60fps server frames) but 'not found yet' for Zeal — check the build page later.",
+            "<b>Mercenaries:</b> Raheir (hired) · Aldkin (reinforcement, Opportunity)."
           ]
         }
       ]
@@ -244,15 +175,11 @@
   ],
   "resources": [
     { "group": "Our builds (Mobalytics)", "links": [
-      { "label": "WW Barb — leveling", "url": "https://mobalytics.gg/diablo-4/builds/barbarian-whirlwind-leveling-barb" },
-      { "label": "WW Barb — endgame", "url": "https://mobalytics.gg/diablo-4/profile/cliptis/builds/pure-whirlwind" },
-      { "label": "Wing Strikes Paladin — leveling", "url": "https://mobalytics.gg/diablo-4/builds/wing-strikes-paladin-leveling" },
-      { "label": "Wing Strikes Paladin — endgame", "url": "https://mobalytics.gg/diablo-4/builds/wing-strikes-paladin" }
+      { "label": "WW Barb — endgame (Cliptis)", "url": "https://mobalytics.gg/diablo-4/profile/cliptis/builds/pure-whirlwind" },
+      { "label": "Zeal Paladin — endgame (Sanctum)", "url": "https://mobalytics.gg/diablo-4/builds/zeal-paladin-m1py" }
     ]},
-    { "group": "Leveling & method guides (Cliptis)", "links": [
-      { "label": "LoH leveling (War Plans / Helltide / Undercity)", "url": "https://www.cliptis.com/loh-leveling" },
-      { "label": "Seasonal leveling walkthrough", "url": "https://www.cliptis.com/seasonal-leveling" },
-      { "label": "Seasonal guides", "url": "https://www.cliptis.com/seasonal-guides" },
+    { "group": "Method guides (Cliptis)", "links": [
+      { "label": "War Plans / Helltide / Undercity farming", "url": "https://www.cliptis.com/loh-leveling" },
       { "label": "Gearing guide", "url": "https://www.cliptis.com/gearing-guide" },
       { "label": "Ultimate endgame how-to", "url": "https://www.cliptis.com/ultimate-endgame-how-to" }
     ]},
@@ -267,49 +194,48 @@
     ]}
   ],
   "roadmap": [
-    { "id": "sync-warplans", "text": "Get War Plans synced as a party (see Guide → Syncing War Plans)" },
-    { "id": "expert", "text": "Move to Expert/Penitent (we're 50 now)" },
-    { "id": "nodes14", "text": "Push Helltide nodes toward 14 for guaranteed Maggots" },
-    { "id": "pit10", "text": "Clear Pit 10 at 60+ to unlock Torment 1" },
-    { "id": "endgame-swap", "text": "Swap to endgame builds at 70 (Starter/Legendary variants first)" },
-    { "id": "unique-chase", "text": "Boss-farm the unique chase list (see farming targets)" },
-    { "id": "mythics", "text": "Craft first Mythics at 70 in Torment+ (cube: 850+ unique + 5 Fragments)" }
+    { "id": "sync-warplans", "text": "War Plans synced as a party (re-do after any reroll)" },
+    { "id": "pit10", "text": "Clear Pit 10 → unlock Torment 1" },
+    { "id": "t3-maggots", "text": "Climb to Torment 3 — Maggot-farm the paragon boards full" },
+    { "id": "butcher-farm", "text": "Bloodied Butcher runs: Ramaladni's (L) + Red Sermon (N) — one boss, both weapons" },
+    { "id": "glyphs15", "text": "All main glyphs to 15" },
+    { "id": "first-mythic", "text": "First Mythic craft (850+ unique + 5 Fragments, level 70 in Torment+)" },
+    { "id": "variant-up", "text": "Gear cards + paragon done → each move up to the next build variant" }
   ],
   "openQuestions": [
-    "Exact Season 14 Capstone dungeon levels (S13 were 30/50/60/60/60)",
-    "Run the seasonal quest now or skip for speed? (co-op decision)",
-    "Verify endgame skill rank splits + paragon board order in-game against Mobalytics",
     "How many Torment tiers does S14 actually have? (Cliptis filters mention T12)",
-    "Where does Berú of Light's Epiphany (talisman set) come from — and is the bug fixed yet?",
-    "Maggot farming difficulty: Sanctum says Normal for speed, Cliptis ladder says Hard→Expert — which nets more XP/hour for us as a duo?",
-    "Sanctum's strategy list says temper 'HP and Demonology DMG' and mentions legendary nodes for a 'Rampage Build' — odd wording, possibly copied from another guide; verify what he actually means before acting on it"
+    "Zeal paragon: which glyph goes on which board (2–5)? Priority is Spirit → Resplendence → Feverous → Outmatch → Chip — check the planner tooltips",
+    "WW amulet card lists 'Aspect of Anger Management' as a line — secondary aspect or planner glitch?",
+    "WW talisman line 7 shows 'Tuskhelm of Joritz' as a charm — planner glitch, confirm the real 6th piece",
+    "Zeal attack-speed breakpoints — build page says 'not found yet', re-check after patches",
+    "Paragon node-by-node paths aren't in the app (unreadable in screenshots) — follow the Mobalytics planner boards when spending"
   ],
   "seed": {
     "ticks": {
-      "p1.level": 50, "p2.level": 50,
-      "p1.difficulty": "Hard", "p2.difficulty": "Hard",
+      "p1.level": 70, "p2.level": 70,
+      "p1.difficulty": "Penitent", "p2.difficulty": "Penitent",
       "p1.nodes": 0, "p2.nodes": 0,
-      "p1.phase": "leveling", "p2.phase": "leveling"
+      "p1.phase": "endgame", "p2.phase": "endgame"
     },
     "sessions": [
-      { "id": "a1b2c3d4-0001-4001-8001-000000000001", "session_date": "2026-07-02", "levels": "1 → ~12", "notes": "Character creation, test Helltide — got a feel for co-op" },
-      { "id": "a1b2c3d4-0001-4001-8001-000000000002", "session_date": "2026-07-03", "levels": "→ 35", "notes": "Two Nightmare Dungeons. Fine XP, pivot to Maggot farm next" },
-      { "id": "a1b2c3d4-0001-4001-8001-000000000003", "session_date": "2026-07-03", "levels": "35 → 50", "notes": "Evening push to 50. Next: Expert difficulty, sync War Plans, Helltide/Maggot farm" }
+      { "id": "sess-1", "session_date": "2026-07-02", "levels": "1 → ~12", "notes": "Character creation, test Helltide — got a feel for co-op" },
+      { "id": "sess-2", "session_date": "2026-07-03", "levels": "→ 35", "notes": "Two Nightmare Dungeons. Fine XP, pivot to Maggot farm next" },
+      { "id": "sess-3", "session_date": "2026-07-03", "levels": "35 → 50", "notes": "Evening push to 50. Switched to Penitent around level 45" },
+      { "id": "sess-4", "session_date": "2026-07-04", "levels": "50 → 70", "notes": "Hit 70! Endgame builds from 5 Jul — Landi on WW Legendary, Nolan switching to Zeal Starter" }
     ],
     "targets": [
-      { "id": "b2c3d4e5-0002-4002-8002-000000000001", "character": "p1", "item": "Tuskhelm of Joritz the Mighty", "source": "Bartuc", "note": "Endgame helm" },
-      { "id": "b2c3d4e5-0002-4002-8002-000000000002", "character": "p1", "item": "Gohr's Devastating Grips", "source": "Grigoire, The Galvanic Saint", "note": "" },
-      { "id": "b2c3d4e5-0002-4002-8002-000000000003", "character": "p1", "item": "Tibault's Will", "source": "Shared pool — any boss", "note": "" },
-      { "id": "b2c3d4e5-0002-4002-8002-000000000004", "character": "p1", "item": "Ramaladni's Magnum Opus", "source": "Bloodied Butcher", "note": "" },
-      { "id": "b2c3d4e5-0002-4002-8002-000000000005", "character": "p1", "item": "Ring of Starless Skies", "source": "Mythic — cube craft / Corrupted Reaper", "note": "" },
-      { "id": "b2c3d4e5-0002-4002-8002-000000000006", "character": "p1", "item": "The Grandfather", "source": "Mythic — cube craft / Corrupted Reaper", "note": "" },
-      { "id": "b2c3d4e5-0002-4002-8002-000000000007", "character": "p1", "item": "Melted Heart of Selig", "source": "Mythic — cube craft / Corrupted Reaper", "note": "FINAL chase — requires zero-Max-Life setup + Endurant Faith" },
-      { "id": "b2c3d4e5-0002-4002-8002-000000000011", "character": "p2", "item": "Sanctis of Kethamar", "source": "The Beast in the Ice", "note": "Equip the moment it drops (even while leveling)" },
-      { "id": "b2c3d4e5-0002-4002-8002-000000000012", "character": "p2", "item": "Crown of Lucion", "source": "Shared pool — any boss", "note": "Mythic version = x58.5%" },
-      { "id": "b2c3d4e5-0002-4002-8002-000000000013", "character": "p2", "item": "Fists of Fate (Mythic)", "source": "Cube craft — 850+ unique + 5 Fragments", "note": "Only use if Mythic" },
-      { "id": "b2c3d4e5-0002-4002-8002-000000000014", "character": "p2", "item": "Endurant Faith", "source": "Shared pool — any boss", "note": "Defensive charm" },
-      { "id": "b2c3d4e5-0002-4002-8002-000000000015", "character": "p2", "item": "Griswold's Opus", "source": "Astaroth", "note": "Charm" },
-      { "id": "b2c3d4e5-0002-4002-8002-000000000016", "character": "p2", "item": "Blood-Mad Idol", "source": "Shared pool — any boss", "note": "Highest damage charm + MS" }
+      { "id": "t-p1-tuskhelm", "character": "p1", "item": "Tuskhelm of Joritz the Mighty", "source": "Bartuc", "note": "Uniques-variant helm" },
+      { "id": "t-p1-gohrs", "character": "p1", "item": "Gohr's Devastating Grips", "source": "Grigoire, The Galvanic Saint", "note": "" },
+      { "id": "t-p1-tibaults", "character": "p1", "item": "Tibault's Will", "source": "Shared pool — any boss", "note": "" },
+      { "id": "t-p1-ramaladnis", "character": "p1", "item": "Ramaladni's Magnum Opus", "source": "Bloodied Butcher", "note": "Duo-farm with Nolan's Red Sermon" },
+      { "id": "t-p1-starless", "character": "p1", "item": "Ring of Starless Skies", "source": "Mythic — cube craft / Corrupted Reaper", "note": "" },
+      { "id": "t-p1-grandfather", "character": "p1", "item": "The Grandfather", "source": "Mythic — cube craft / Corrupted Reaper", "note": "" },
+      { "id": "t-p1-selig", "character": "p1", "item": "Melted Heart of Selig", "source": "Mythic — cube craft / Corrupted Reaper", "note": "FINAL chase — zero-Max-Life setup + Endurant Faith" },
+      { "id": "t-p2-redsermon", "character": "p2", "item": "Red Sermon", "source": "Bloodied Butcher", "note": "THE Zeal weapon — Death or Glory for free. Duo-farm with Landi's Ramaladni's" },
+      { "id": "t-p2-lucion", "character": "p2", "item": "Crown of Lucion", "source": "Shared pool — any boss", "note": "Endgame-variant helm; Mythic = ×58.5%" },
+      { "id": "t-p2-fists", "character": "p2", "item": "Fists of Fate (Mythic)", "source": "Cube craft — 850+ unique + 5 Fragments", "note": "Mythic-variant gloves" },
+      { "id": "t-p2-bloodmad", "character": "p2", "item": "Blood-Mad Idol", "source": "Shared pool — any boss", "note": "Highest-damage charm + move speed" },
+      { "id": "t-p2-endurant", "character": "p2", "item": "Endurant Faith", "source": "Shared pool — any boss", "note": "Defensive charm option" }
     ]
   }
 }

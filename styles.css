@@ -104,13 +104,20 @@ li.done .check-label > span { color: var(--muted); text-decoration: line-through
 .gear-text { flex: 1; }
 .gear-text b { display: block; font-size: .78rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
 li.gear.done .gear-text span { color: var(--gold); }
-.state-chip {
+.frac {
   border-radius: 999px; border: 1px solid var(--line); background: var(--card2);
-  color: var(--muted); padding: .45rem .8rem; min-width: 96px; min-height: 44px; white-space: nowrap;
+  color: var(--muted); padding: .35rem .7rem; font-size: .85rem; white-space: nowrap;
 }
-.state-chip.s1 { color: var(--amber); border-color: var(--amber); }
-.state-chip.s2 { color: var(--green); border-color: var(--green); }
-.state-chip.s3 { color: #111; background: var(--gold); border-color: var(--gold); font-weight: 700; }
+.frac.part { color: var(--amber); border-color: var(--amber); }
+.frac.full { color: #111; background: var(--gold); border-color: var(--gold); font-weight: 700; }
+.chev { color: var(--muted); padding: 0 .2rem; }
+.subchecks { list-style: none; margin: 0 0 .5rem; padding: 0; }
+.subchecks li { display: flex; align-items: flex-start; gap: .6rem; padding: .4rem 0; border-bottom: 1px solid #241f2b; }
+.subchecks li:last-child { border-bottom: 0; }
+.subchecks li.done .check { border-color: var(--green); }
+.subchecks li.done .check-label > span { color: var(--muted); text-decoration: line-through; }
+.subchecks .check-label small { text-transform: uppercase; letter-spacing: .04em; font-size: .68rem; }
+.phase-label { flex: 1; color: var(--gold); font-size: .95rem; padding: .5rem .2rem; text-transform: uppercase; letter-spacing: .05em; }
 .gear-detail { background: var(--card2); border-radius: 10px; padding: .6rem .8rem; margin: .3rem 0 .5rem; font-size: .88rem; }
 .gear-detail p { margin: .3rem 0; }
 .ladder { margin: 0 0 .3rem; padding-left: 1.2rem; }

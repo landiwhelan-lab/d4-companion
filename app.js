@@ -135,8 +135,8 @@ function renderCharacter(ch) {
       ${nodeCounter(ch.id, nodes)}
     </div>
 
-    <div class="phase-tabs">${phaseTabs}
-      <a class="build-link" target="_blank" rel="noopener" href="${phase.id === 'endgame' ? ch.links.endgame : ch.links.leveling}">Mobalytics ↗</a>
+    <div class="phase-tabs">${ch.phases.length > 1 ? phaseTabs : `<span class="phase-label">${esc(phase.label)}</span>`}
+      <a class="build-link" target="_blank" rel="noopener" href="${ch.links.endgame}">Mobalytics ↗</a>
     </div>
     ${phase.intro ? `<div class="intro-note">${phase.intro}</div>` : ''}
 
@@ -152,7 +152,7 @@ function renderCharacter(ch) {
       <ul class="gearlist">
         ${phase.gear.map(g => gearRow(ch.id, phase, g)).join('')}
       </ul>
-      ${phase.id === 'endgame' ? `<p class="hint">Tap the state chip to advance: — → Stopgap → Got it → Perfected. Long-press to go back. Tap the row for the ladder & drop source.</p>` : ''}
+      <p class="hint">Tap a slot to open it, then tick each aspect, affix, temper and masterwork as your drop gets there.</p>
     </section>
 
     ${phase.paragon ? `
@@ -206,48 +206,44 @@ function checkRow(key, text, note) {
   </li>`;
 }
 
+// Every slot is a bundle of individually tickable pieces: base item/aspect,
+// each affix, each temper, masterwork. Tick them as your drop gets there.
+function gearSubs(g) {
+  const subs = [{ k: 'item', label: g.item, tag: g.kind || 'Item / aspect' }];
+  (g.affixes || []).forEach((a, i) => subs.push({ k: 'a' + i, label: a, tag: /gem|rune/i.test(a) ? 'Socket' : 'Affix' }));
+  (g.tempers || []).forEach((t, i) => subs.push({ k: 't' + i, label: t, tag: 'Temper' }));
+  if (g.masterwork) subs.push({ k: 'mw', label: g.masterwork, tag: 'Masterwork' });
+  return subs;
+}
+
 function gearRow(chId, phase, g) {
-  const key = `${chId}.${phase.id}.gear.${g.id}`;
-  const st = phase.id === 'endgame' ? Number(store.tick(key, 0)) : (store.tick(key, false) ? 3 : 0);
-  const states = C.gearStates;
-  const open = openGear.has(key);
-  if (phase.id !== 'endgame') {
-    // leveling: checkbox rows, expandable when they carry affix/temper detail
-    const on = st === 3;
-    const hasDetail = g.affixes?.length || g.tempers?.length || g.masterwork || g.aspect || g.note;
-    return `<li class="gear lvl ${on ? 'done' : ''}">
-      <div class="gear-main" ${hasDetail ? `data-expand="${key}"` : ''}>
-        <button class="check" data-check-gear="${key}" aria-checked="${on}">${on ? '✓' : ''}</button>
-        <div class="gear-text">
-          <b>${esc(g.slot)}</b>
-          <span>${esc(g.item)}</span>
-        </div>
-        ${hasDetail ? `<span class="chev">${open ? '▾' : '▸'}</span>` : ''}
-      </div>
-      ${open && hasDetail ? `<div class="gear-detail">
-        ${g.aspect ? `<p>✨ <b>Aspect:</b> ${esc(g.aspect)}</p>` : ''}
-        ${g.affixes?.length ? `<p>🎯 <b>Affixes:</b> ${g.affixes.map(esc).join(' · ')}</p>` : ''}
-        ${g.tempers?.length ? `<p>🔨 <b>Tempers:</b> ${g.tempers.map(esc).join(' · ')}</p>` : ''}
-        ${g.masterwork ? `<p>⭐ <b>Masterwork:</b> ${esc(g.masterwork)}</p>` : ''}
-        ${g.note ? `<p>${esc(g.note)}</p>` : ''}
-      </div>` : ''}
-    </li>`;
-  }
-  return `<li class="gear ${st === 3 ? 'done' : ''}">
-    <div class="gear-main" data-expand="${key}">
+  const base = `${chId}.${phase.id}.gear.${g.id}`;
+  const subs = gearSubs(g);
+  const done = subs.filter(s => store.tick(`${base}.${s.k}`, false)).length;
+  const complete = done === subs.length;
+  const open = openGear.has(base);
+  return `<li class="gear ${complete ? 'done' : ''}">
+    <div class="gear-main" data-expand="${base}">
       <div class="gear-text">
         <b>${esc(g.slot)}</b>
         <span>${esc(g.item)}</span>
       </div>
-      <button class="state-chip s${st}" data-cycle="${key}">${states[st]}</button>
+      <span class="frac ${complete ? 'full' : done > 0 ? 'part' : ''}">${done}/${subs.length}</span>
+      <span class="chev">${open ? '▾' : '▸'}</span>
     </div>
     ${open ? `<div class="gear-detail">
-      <ol class="ladder">${g.ladder.map((l, i) => `<li class="${i <= st - 1 ? 'past' : ''}">${esc(l)}</li>`).join('')}</ol>
+      <ul class="subchecks">
+        ${subs.map(s => {
+          const key = `${base}.${s.k}`;
+          const on = store.tick(key, false);
+          return `<li class="${on ? 'done' : ''}">
+            <button class="check" data-check="${key}" aria-checked="${on}">${on ? '✓' : ''}</button>
+            <div class="check-label"><span>${esc(s.label)}</span><small>${esc(s.tag)}</small></div>
+          </li>`;
+        }).join('')}
+      </ul>
       ${g.source ? `<p>📍 <b>${esc(g.source)}</b></p>` : ''}
-      ${g.aspect ? `<p>✨ <b>Aspect:</b> ${esc(g.aspect)}</p>` : ''}
-      ${g.affixes?.length ? `<p>🎯 <b>Affixes:</b> ${g.affixes.map(esc).join(' · ')}</p>` : ''}
-      ${g.tempers?.length ? `<p>🔨 <b>Tempers:</b> ${g.tempers.map(esc).join(' · ')}</p>` : ''}
-      ${g.masterwork ? `<p>⭐ <b>Masterwork:</b> ${esc(g.masterwork)}</p>` : ''}
+      ${g.ladder?.length ? `<p>⬆ <b>Upgrade path:</b> ${g.ladder.map(esc).join(' → ')}</p>` : ''}
       ${g.note ? `<p>${esc(g.note)}</p>` : ''}
     </div>` : ''}
   </li>`;
@@ -261,14 +257,13 @@ function completion(chId, phase, kind) {
   return `<span class="count">${done}/${items.length}</span>`;
 }
 function gearCompletion(chId, phase) {
-  if (phase.id !== 'endgame') {
-    const done = phase.gear.filter(g => store.tick(`${chId}.${phase.id}.gear.${g.id}`, false)).length;
-    return `<span class="count">${done}/${phase.gear.length}</span>`;
+  let done = 0, total = 0;
+  for (const g of phase.gear) {
+    const base = `${chId}.${phase.id}.gear.${g.id}`;
+    for (const s of gearSubs(g)) { total++; if (store.tick(`${base}.${s.k}`, false)) done++; }
   }
-  const total = phase.gear.length * 3;
-  const sum = phase.gear.reduce((a, g) => a + Number(store.tick(`${chId}.${phase.id}.gear.${g.id}`, 0)), 0);
-  const pct = Math.round(100 * sum / total);
-  return `<span class="count">${pct}% perfected</span><span class="bar"><span style="width:${pct}%"></span></span>`;
+  const pct = total ? Math.round(100 * done / total) : 0;
+  return `<span class="count">${done}/${total} · ${pct}%</span><span class="bar"><span style="width:${pct}%"></span></span>`;
 }
 
 function targetRow(t) {
@@ -344,15 +339,11 @@ function renderLinks() {
 }
 
 // ---------- event wiring ----------
-let pressTimer = null;
 function wire(view) {
   view.onclick = async (e) => {
     const t = e.target;
     const check = t.closest('[data-check]');
     if (check) { store.setTick(check.dataset.check, !store.tick(check.dataset.check, false)); return; }
-
-    const checkGear = t.closest('[data-check-gear]');
-    if (checkGear) { store.setTick(checkGear.dataset.checkGear, !store.tick(checkGear.dataset.checkGear, false)); return; }
 
     const step = t.closest('[data-step]');
     if (step) {
@@ -365,16 +356,8 @@ function wire(view) {
       return;
     }
 
-    const cycle = t.closest('[data-cycle]');
-    if (cycle) {
-      if (cycle._longpressed) { cycle._longpressed = false; return; }
-      const key = cycle.dataset.cycle;
-      store.setTick(key, (Number(store.tick(key, 0)) + 1) % 4);
-      return;
-    }
-
     const expand = t.closest('[data-expand]');
-    if (expand && !t.closest('[data-cycle]')) {
+    if (expand) {
       const key = expand.dataset.expand;
       openGear.has(key) ? openGear.delete(key) : openGear.add(key);
       render();
@@ -410,19 +393,6 @@ function wire(view) {
       return;
     }
   };
-
-  // long-press on gear state chip = step backwards
-  view.addEventListener('pointerdown', (e) => {
-    const chip = e.target.closest('[data-cycle]');
-    if (!chip) return;
-    pressTimer = setTimeout(() => {
-      chip._longpressed = true;
-      const key = chip.dataset.cycle;
-      store.setTick(key, (Number(store.tick(key, 0)) + 3) % 4);
-    }, 550);
-  });
-  ['pointerup', 'pointerleave', 'pointercancel'].forEach(ev =>
-    view.addEventListener(ev, () => clearTimeout(pressTimer)));
 
   view.onchange = (e) => {
     const diff = e.target.closest('[data-diff]');
